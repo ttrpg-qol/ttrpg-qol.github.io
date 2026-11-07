@@ -1,0 +1,642 @@
+[
+  {
+    "name": "Calimemnon Crystal",
+    "source": "FRAiF",
+    "page": 243,
+    "scfType": "arcane",
+    "rarity": "artifact",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "This immaculately cut sixty-sided diamond fits in one hand, yet it contains an entire genie empire. The Calimemnon Crystal was made by high elf magic to imprison the notorious genie lords Calim and Memnon, who once ruled and warred over what is now Calimshan.",
+      "When viewed by a creature with {@sense Truesight|XPHB}, the normally beautiful diamond is a grotesque sight: trapped within the gemstone are more than a hundred genies, including the physical forms of Calim and Memnon. The genies scream and strain in agonized fury, pressing their belligerent faces against the walls of their crystal line prison.",
+      {
+        "type": "entries",
+        "name": "Properties of the Crystal",
+        "entries": [
+          "While attuned to the crystal, you gain the following benefits:",
+          {
+            "type": "list",
+            "style": "list-hang-notitle",
+            "items": [
+              {
+                "type": "item",
+                "name": "Arcane Focus",
+                "entries": [
+                  "You can use the Calimemnon Crystal as an Arcane Focus."
+                ]
+              },
+              {
+                "type": "item",
+                "name": "Flight",
+                "entries": [
+                  "You have a {@variantrule Fly Speed|XPHB} of 30 feet and can hover."
+                ]
+              },
+              {
+                "type": "item",
+                "name": "Spells",
+                "entries": [
+                  "You can cast these spells with the crystal (spell save DC 18): {@spell Create or Destroy Water|XPHB}, {@spell Enlarge/Reduce|XPHB}, {@spell Invisibility|XPHB} (targeting yourself only), and {@spell Major Image|XPHB}."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Aura of Cold",
+        "entries": [
+          "The temperature drops precipitously in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the crystal. Whenever the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} enters a creature's space and whenever a creature enters the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} or ends its turn there, the creature takes ({@dice 2d6}) Cold damage. A creature takes this damage only once per turn. While attuned to the crystal, you are unaffected by the aura, and you can take a {@action Magic|XPHB} action to disable or enable the aura."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Healing/Damage Rays",
+        "entries": [
+          "While holding the crystal, you can take a {@action Magic|XPHB} action to fire six rays of volatile energy from the crystal at one or more creatures within 60 feet. You can aim the rays at one target or at several. For each ray, choose one of the following effects:",
+          {
+            "type": "list",
+            "style": "list-hang-notitle",
+            "items": [
+              {
+                "type": "item",
+                "name": "Damage Ray",
+                "entries": [
+                  "The target makes a DC 18 Dexterity saving throw, taking ({@dice 6d6 + 6}) Radiant damage on a failed save or half as much damage on a successful one."
+                ]
+              },
+              {
+                "type": "item",
+                "name": "Healing Ray",
+                "entries": [
+                  "The target regains {@dice 2d6 + 2} {@variantrule Hit Points|XPHB}.",
+                  "This property can't be used again until the next dawn."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Random Properties",
+        "entries": [
+          "The Artifact has the following random properties (see chapter 7 of the Dungeon Master's Guide):",
+          {
+            "type": "list",
+            "items": [
+              "1 {@table Artifact Properties; Minor Beneficial Properties|XDMG|minor beneficial} property",
+              "1 {@table Artifact Properties; Major Beneficial Properties|XDMG|major beneficial} property",
+              "1 {@table Artifact Properties; Minor Detrimental Properties|XDMG|minor detrimental} property",
+              "1 {@table Artifact Properties; Major Detrimental Properties|XDMG|major detrimental} property"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Destroying the Crystal",
+        "entries": [
+          "The Calimemnon Crystal is destroyed if the creature attuned to it casts the {@spell Wish|XPHB} spell and wishes the crystal destroyed. Nothing else can harm it. When the crystal is destroyed, all the genies in the crystal are released."
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "create or destroy water|xphb",
+      "enlarge/reduce|xphb",
+      "invisibility|xphb",
+      "major image|xphb"
+    ],
+    "hasFluffImages": true
+  },
+  {
+    "name": "Crown of Horns",
+    "source": "FRAiF",
+    "page": 243,
+    "rarity": "artifact",
+    "reqAttune": true,
+    "wondrous": true,
+    "curse": true,
+    "sentient": true,
+    "entries": [
+      "The Crown of Horns contains the essence and intelligence of Myrkul, one of the Dead Three. This ghastly crown is a pale silver circlet with four curved bones set around its rim. On the crown's brow is set a black diamond whose depths swirl with weird, malignant energy.",
+      "Myrkul created the Crown of Horns at the height of his power. When Myrkul was slain by Mystra, he imbued the crown with his dying essence. Myrkul has since returned to become one of the Dead Three, and the Crown of Horns continues to further his gruesome will by seeking out mortal agents and gradually transforming them into powerful Undead scions. Should a wearer prove unworthy of this honor, the crown teleports away to find a new mortal to corrupt for its master.",
+      {
+        "type": "entries",
+        "name": "Cursed",
+        "entries": [
+          "The crown is cursed. Attuning to the crown extends the curse to you. Only a {@spell Wish|XPHB} spell or the will of Myrkul can remove this curse. As long as you remain cursed, the following properties apply to you:",
+          {
+            "type": "list",
+            "style": "list-hang-notitle",
+            "items": [
+              {
+                "type": "item",
+                "name": "Bound",
+                "entries": [
+                  "You are unwilling to part with the crown, wearing it at all times, and you can't voluntarily end your {@variantrule Attunement|XPHB} to the crown."
+                ]
+              },
+              {
+                "type": "item",
+                "name": "Cruel",
+                "entries": [
+                  "Your alignment becomes Neutral Evil."
+                ]
+              },
+              {
+                "type": "item",
+                "name": "Doomed",
+                "entries": [
+                  "You slowly transform into a monstrous servant of Myrkul over the course of 365 days. During that time, the transformation is purely cosmetic; these cosmetic changes slowly fade if you end {@variantrule Attunement|XPHB} to the crown before completing the transformation. When the transformation is complete, you become a {@creature Lich|XMM} under the DM's control. Each time you use this Artifact's {@variantrule Cone [Area of Effect]|XPHB|Cone} of Undeath or Myrkul's Hand benefit, there is a 10 percent cumulative chance that you instantly complete this transformation."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Cone of Undeath",
+        "entries": [
+          "You can take a {@action Magic|XPHB} action to unleash a wave of unholy light in a 60-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. Each creature in the {@variantrule Cone [Area of Effect]|XPHB|Cone} makes a DC 18 Constitution saving throw, taking ({@dice 4d8}) Necrotic damage on a failed save or half as much damage on a successful one. A Humanoid killed by {@variantrule Cone [Area of Effect]|XPHB|Cone} of Undeath rises at the start of your next turn as a {@creature Specter|XMM} that follows your verbal orders."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Damage Immunity",
+        "entries": [
+          "You have {@variantrule Immunity|XPHB} to Necrotic damage."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Fear Aura",
+        "entries": [
+          "While wearing the crown, you emit an aura of terrifying energy in a 60-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. A creature that enters this area for the first time on a turn or starts its turn there must succeed on a DC 16 Wisdom saving throw or have the {@condition Frightened|XPHB} condition. A {@condition Frightened|XPHB} target must use its movement on its turns to get as far away as possible from you, moving by the safest route.",
+          "If you damage a {@condition Frightened|XPHB} target or if a {@condition Frightened|XPHB} target ends its turn more than 120 feet away from you, the target can repeat the Wisdom save, ending the condition on itself on a success. A creature that succeeds on the save against this effect is immune to it for 1 minute, after which it can be affected again.",
+          "The aura is inactive while you have the {@condition Incapacitated|XPHB} condition. You can activate or deactivate the aura as a {@variantrule Bonus Action|XPHB}."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Myrkul's Hand",
+        "entries": [
+          "While wearing the crown, you can cast the {@spell Power Word Kill|XPHB} spell (save DC 18) from it. A Humanoid killed by this spell rises at the start of your next turn as a {@creature Wraith|XMM} that follows your verbal orders. Once you use the crown to cast this spell, you can't cast it again from the crown until the next dawn."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Teleportation",
+        "entries": [
+          "While wearing the crown, you can cast the {@spell Teleport|XPHB} spell. The crown can also cast this spell of its own free will. Once the spell has been cast using the crown, it can't be cast again until 7 days have passed."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Random Properties",
+        "entries": [
+          "The Artifact has the following random properties (see chapter 7 of the Dungeon Master's Guide):",
+          {
+            "type": "list",
+            "items": [
+              "1 {@table Artifact Properties; Minor Beneficial Properties|XDMG|minor beneficial} property",
+              "1 {@table Artifact Properties; Minor Detrimental Properties|XDMG|minor detrimental} property",
+              "1 {@table Artifact Properties; Major Detrimental Properties|XDMG|major detrimental} property"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Sentience",
+        "entries": [
+          "The Crown of Horns is a sentient Neutral Evil Artifact with an Intelligence of 10, a Wisdom of 16, and a Charisma of 19. It has hearing and {@sense Darkvision|XPHB} out to 120 feet.",
+          "The crown communicates telepathically with its wearer and knows Common."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Personality",
+        "entries": [
+          "The crown contains the essence of Myrkul and exists to spread that god's will, which is to slay the living, raise the dead, and sow fear across the Material Plane. The crown urges its wearer to spread dread and destruction wherever possible."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Destroying the Crown",
+        "entries": [
+          "The crown is destroyed if it is worn by Myrkul's successor, Kelemvor, while he sits on the throne of Myrkul's former realm, the Bone Castle."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "power word kill|xphb"
+        ]
+      },
+      "other": [
+        "teleport|xphb"
+      ]
+    },
+    "hasFluffImages": true
+  },
+  {
+    "name": "Deathdance",
+    "source": "FRAiF",
+    "page": 237,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "value": 20000,
+    "poison": true,
+    "entries": [
+      "A creature subjected to Deathdance must succeed on a {@dc 13} Constitution saving throw or have the {@condition Poisoned|XPHB} condition for 1 minute. Humanoids automatically succeed on this save. The creature also has the {@condition Incapacitated|XPHB} condition while {@condition Poisoned|XPHB} in this way, as it thrashes uncontrollably."
+    ],
+    "poisonTypes": [
+      "injury"
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  },
+  {
+    "name": "Ffolk Sailing Ship",
+    "source": "FRAiF",
+    "page": 166,
+    "type": "SHP|XPHB",
+    "rarity": "none",
+    "value": 2000000,
+    "crew": 20,
+    "vehAc": 15,
+    "vehHp": 400,
+    "vehDmgThresh": 20,
+    "vehSpeed": 2,
+    "capPassenger": 20,
+    "capCargo": 100
+  },
+  {
+    "name": "Harper Pin",
+    "source": "FRAiF",
+    "page": 244,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "When you attune to this pin, choose a Harper persona (see the {@book Forgotten Realms: Heroes of Faerûn|FRHoF|6|Harper Personas} for examples), including an alignment and a creature type. While wearing this pin, you register as that persona when targeted by magic to determine your creature type, alignment, or location.",
+      "The type of pin determines its rarity and effects.",
+      {
+        "type": "entries",
+        "name": "Silver Harper Pin",
+        "entries": [
+          "When you attune to this pin, you can devise a general line of thought of 25 words or fewer. While you wear this pin, a creature that reads your thoughts detects your preprogrammed line of thought instead. A creature that takes the {@action Study|XPHB} action while reading your thoughts makes a DC 13 Intelligence ({@skill Investigation|XPHB}) check. On a successful check, it becomes aware that the detected thoughts are preprogrammed."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Golden Harper Pin",
+        "entries": [
+          "While wearing this pin, you can cast the {@spell Nondetection|XPHB} spell on yourself. The duration of this spell is permanent until you disable the effect (no action required), you remove the pin, or you are no longer attuned to the pin."
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "nondetection|xphb"
+    ],
+    "hasFluffImages": true
+  },
+  {
+    "name": "Mechanical Wonder (Domestic)",
+    "source": "FRAiF",
+    "page": 245,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "value": 40000,
+    "entries": [
+      "A Mechanical Wonder is a semi-autonomous object imbued with magical power. Mechanical Wonders vary greatly in size and form depending on their function.",
+      "A Mechanical Wonder is a dormant object until activated. To activate a Mechanical Wonder, you must wind the wonder with a handheld key unique to that wonder. It takes 1 minute to wind a Mechanical Wonder. While you wind it, you must take the {@action Utilize|XPHB} action each turn.",
+      "Once wound, a Mechanical Wonder remains activated for the duration specified in the wonder's description.",
+      "This bipedal wonder is designed to assist with household duties. It vaguely resembles whatever species its creator used as inspiration. An activated domestic wonder uses the {@creature Domestic Wonder|FRAiF} stat block. The wonder is an ally to you and your allies. In combat, the wonder shares your {@variantrule Initiative|XPHB} count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|XPHB} action and uses its movement to avoid danger. The domestic wonder is destroyed if it drops to 0 {@variantrule Hit Points|XPHB}."
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Mechanical Wonder (Flying)",
+    "source": "FRAiF",
+    "page": 245,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "A Mechanical Wonder is a semi-autonomous object imbued with magical power. Mechanical Wonders vary greatly in size and form depending on their function.",
+      "A Mechanical Wonder is a dormant object until activated. To activate a Mechanical Wonder, you must wind the wonder with a handheld key unique to that wonder. It takes 1 minute to wind a Mechanical Wonder. While you wind it, you must take the {@action Utilize|XPHB} action each turn.",
+      "Once wound, a Mechanical Wonder remains activated for the duration specified in the wonder's description.",
+      "An activated flying wonder uses the {@creature Flying Wonder|FRAiF} stat block. The wonder is an ally to you and your allies. In combat, the wonder shares your {@variantrule Initiative|XPHB} count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge|XPHB} action and uses its movement to avoid danger. The flying wonder is destroyed if it drops to 0 {@variantrule Hit Points|XPHB}."
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Mechanical Wonder (Gyrocopter)",
+    "source": "FRAiF",
+    "page": 245,
+    "rarity": "rare",
+    "wondrous": true,
+    "weight": 500,
+    "entries": [
+      "A Mechanical Wonder is a semi-autonomous object imbued with magical power. Mechanical Wonders vary greatly in size and form depending on their function.",
+      "A Mechanical Wonder is a dormant object until activated. To activate a Mechanical Wonder, you must wind the wonder with a handheld key unique to that wonder. It takes 1 minute to wind a Mechanical Wonder. While you wind it, you must take the {@action Utilize|XPHB} action each turn.",
+      "This wagon-sized vehicle is made of brassy metal and has a spiral-shaped propeller atop it. Its midsection is open on two sides. Once wound, the gyrocopter wonder remains active for 8 hours. While active, the gyrocopter can be used as a vehicle; it requires one pilot.",
+      "The gyrocopter wonder is a Huge object that weighs 500 pounds and has the following statistics: AC 14, HP 50, {@variantrule Speed|XPHB} 5 ft., and {@variantrule Fly Speed|XPHB} 20 ft. The gyrocopter can bear up to 2,000 pounds of cargo; if it bears any more than this, it deactivates.",
+      "Eight spectral cords are mounted to the inside of the cargo bay. A creature riding in the gyrocopter wonder can take a {@action Utilize|XPHB} action to attach itself to or detach itself from one of these cords. A creature attached to a cord can leap from the gyrocopter wonder and glide, moving up to 5 feet horizontally for every 1 foot it descends in the air. If a creature attached to a cord is ever more than 500 feet away from the gyrocopter, the cord immediately disappears and returns to the wonder."
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Mechanical Wonder (Mobility)",
+    "source": "FRAiF",
+    "page": 246,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "A Mechanical Wonder is a semi-autonomous object imbued with magical power. Mechanical Wonders vary greatly in size and form depending on their function.",
+      "A Mechanical Wonder is a dormant object until activated. To activate a Mechanical Wonder, you must wind the wonder with a handheld key unique to that wonder. It takes 1 minute to wind a Mechanical Wonder. While you wind it, you must take the {@action Utilize|XPHB} action each turn.",
+      "While inactive, the mobility wonder resembles a metal turtle shell with straps. It is designed to be worn on your back or flank, depending on your anatomy. Once wound, the mobility wonder transforms into a personal transport device and remains active for 24 hours. While active, the mobility wonder increases your {@variantrule Speed|XPHB} to 30 feet. Other creatures can't remove your mobility wonder from you unless you allow it."
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Norlander Longship",
+    "source": "FRAiF",
+    "page": 166,
+    "type": "SHP|XPHB",
+    "rarity": "none",
+    "value": 2000000,
+    "crew": 50,
+    "vehAc": 17,
+    "vehHp": 300,
+    "vehDmgThresh": 15,
+    "vehSpeed": 6,
+    "capPassenger": 100,
+    "capCargo": 10
+  },
+  {
+    "name": "Orb of Damara",
+    "source": "FRAiF",
+    "page": 246,
+    "rarity": "artifact",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "dawn",
+    "rechargeAmount": "{@dice 1d4 + 2}",
+    "charges": 6,
+    "entries": [
+      "A wizard named Damara created this orb while devising a way to become a dragon. Aided by a mysterious magician (actually an aspect of Tiamat in disguise), Damara eventually created an Artifact that would enable him to achieve his dream. Yet the potential power of his creation terrified Damara so much that he dared not use the orb. Instead, the wizard entombed himself with the Artifact to seal it away.",
+      "The Orb of Damara is about 6 inches in diameter and is made of a glassy, iridescent material that's like obsidian but incredibly hard. If held to one's own lips with the intention of consuming it, the orb shrinks to the size of a grape.",
+      {
+        "type": "entries",
+        "name": "Properties of the Orb",
+        "entries": [
+          "While attuned to the orb, you gain the following benefits:",
+          {
+            "type": "list",
+            "style": "list-hang-notitle",
+            "items": [
+              {
+                "type": "item",
+                "name": "Dragon's Breath",
+                "entries": [
+                  "You can take a {@action Magic|XPHB} action to exhale a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. When you do, choose Acid, Cold, Fire, Lightning, or Poison. Each creature in the {@variantrule Cone [Area of Effect]|XPHB|Cone} makes a DC 18 Dexterity saving throw, taking {@damage 6d6} damage of the chosen type on a failed save or half as much damage on a successful one."
+                ]
+              },
+              {
+                "type": "item",
+                "name": "Fear Aura",
+                "entries": [
+                  "You exude a terrifying aura in a 20-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} while you don't have the {@condition Incapacitated|XPHB} condition. You can take a {@action Magic|XPHB} action to disable or enable this aura. Any enemy that starts its turn in the aura must succeed on a DC 18 Wisdom saving throw or have the {@condition Frightened|XPHB} condition until the start of its next turn. A creature that succeeds on this save is immune to the aura's effects for 24 hours."
+                ]
+              },
+              {
+                "type": "item",
+                "name": "Flight",
+                "entries": [
+                  "You have a {@variantrule Fly Speed|XPHB} of 60 feet and can hover."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Random Properties",
+        "entries": [
+          "The Artifact has the following random properties (see chapter 7 of the Dungeon Master's Guide):",
+          {
+            "type": "list",
+            "items": [
+              "2 {@table Artifact Properties; Minor Beneficial Properties|XDMG|minor beneficial} properties",
+              "2 {@table Artifact Properties; Minor Detrimental Properties|XDMG|minor detrimental} properties"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spellcasting",
+        "entries": [
+          "The orb has 6 charges and regains {@dice 1d4 + 2} expended charges daily at dawn. While attuned to the orb, you can cast one of the spells on the following table from it (+10 spell attack modifier, spell save DC 18). The table indicates how many charges you must expend to cast the spell.",
+          {
+            "type": "table",
+            "colLabels": [
+              "Spell",
+              "Charge Cost"
+            ],
+            "colStyles": [
+              "col-10",
+              "col-2 text-center"
+            ],
+            "rows": [
+              [
+                "{@spell Disguise Self|XPHB}",
+                "0"
+              ],
+              [
+                "{@spell Fire Shield|XPHB}",
+                "2"
+              ],
+              [
+                "{@spell Hold Person|XPHB}",
+                "1"
+              ],
+              [
+                "{@spell See Invisibility|XPHB}",
+                "1"
+              ],
+              [
+                "{@spell Summon Dragon|XPHB} (level 9 version)",
+                "4"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Dragon Transformation",
+        "entries": [
+          "If you swallow the orb, you transform into an adult chromatic dragon under the DM's control. The type of chromatic dragon depends on your alignment and personality and is left to the DM to decide. The transformation is permanent, but if the dragon is slain, its body reverts to its original form and the orb reappears outside its body."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Destroying the Orb",
+        "entries": [
+          "If an {@creature Ancient Gold Dragon|XMM} willingly swallows the orb, the orb and the dragon are both destroyed."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "disguise self|xphb"
+      ],
+      "charges": {
+        "1": [
+          "hold person|xphb",
+          "see invisibility|xphb"
+        ],
+        "2": [
+          "fire shield|xphb"
+        ],
+        "4": [
+          "summon dragon|xphb#9"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Prespra",
+    "source": "FRAiF",
+    "page": 237,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "value": 30000,
+    "poison": true,
+    "entries": [
+      "A creature subjected to Prespra must succeed on a {@dc 11} Constitution saving throw or take 3 ({@dice 1d6}) Poison damage and have the {@condition Poisoned|XPHB} condition. The creature also has the {@condition Blinded|XPHB} condition while {@condition Poisoned|XPHB} in this way. The creature repeats the save at the start of each of its turns, taking 3 ({@dice 1d6}) Poison damage on a failed save. On a successful save, the effect ends for the creature."
+    ],
+    "poisonTypes": [
+      "ingested"
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  },
+  {
+    "name": "Rusted Hulk",
+    "source": "FRAiF",
+    "page": 166,
+    "type": "SHP|XPHB",
+    "rarity": "none",
+    "value": 5000000,
+    "crew": 60,
+    "vehAc": 18,
+    "vehHp": 500,
+    "vehDmgThresh": 25,
+    "vehSpeed": 2,
+    "capPassenger": 90,
+    "capCargo": 250
+  },
+  {
+    "name": "Tome of the Dragon",
+    "source": "FRAiF",
+    "page": 247,
+    "rarity": "legendary",
+    "wondrous": true,
+    "entries": [
+      "This heavy tome is bound in dragonhide and reinforced with thick bands of cold iron. The original copies were made by wyrmspeakers of the {@book Cult of the Dragon|FRHoF|6|Cult of the Dragon} and bear that cult's symbol on their cover. The Tome of the Dragon contains the secret ritual to transform a dragon or a dead dragon's body into a dracolich.",
+      "To decipher and use the Tome of the Dragon, you must be either a spellcaster with at least two level 5 spell slots or a Dragon. A single assistant (or more, at the DM's discretion) can help you conduct the ritual, so long as that assistant also meets the requirements to use the tome.",
+      "To create a dracolich using a Tome of the Dragon, you must have continuous access to the body of an adult or ancient dragon (either living or dead), as well as 80,000 GP worth of supplies (which includes a gem that will serve as the anchor for the dracolich's spirit). While you have the necessary materials, you must conduct a ritual that lasts 180 days divided by the number of creatures conducting the ritual. During the ritual, you and any assistants must work without interruption, resting no more than 8 hours per day. If you are a Dragon, the cost of supplies and the ritual's duration are halved.",
+      "When the ritual is complete, the tome explodes with violet light, dealing ({@dice 12d6}) Necrotic damage to you and each assistant. If this damage reduces a creature to 0 {@variantrule Hit Points|XPHB}, the creature is killed and immediately reanimates as a {@creature Zombie|XMM} under the DM's control.",
+      "At the end of the ritual, the target transforms into a {@creature Dracolich|XMM}. If the ritual's target was a living dragon, that dragon dies instantly, and its spirit is transferred to the gem supplied for the ritual. If the target was a dead dragon's body, the body reanimates, and the gem is inhabited by an evil dragon spirit from the Outer Planes. The dracolich is under no obligation toward its creators and acts according to its nature."
+    ],
+    "hasFluffImages": true
+  },
+  {
+    "name": "Ulcrun",
+    "source": "FRAiF",
+    "page": 237,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "value": 100000,
+    "poison": true,
+    "entries": [
+      "A creature subjected to Ulcrun must succeed on a {@dc 15} Constitution saving throw or take 21 ({@dice 6d6}) Poison damage and gain 1 {@condition Exhaustion|XPHB} level."
+    ],
+    "poisonTypes": [
+      "injury"
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  },
+  {
+    "name": "Whaleboat",
+    "source": "FRAiF",
+    "page": 166,
+    "type": "SHP|XPHB",
+    "rarity": "none",
+    "value": 50000,
+    "crew": 6,
+    "vehAc": 13,
+    "vehHp": 100,
+    "vehDmgThresh": 10,
+    "vehSpeed": 3,
+    "capPassenger": 1
+  },
+  {
+    "name": "Windskiff",
+    "source": "FRAiF",
+    "page": 247,
+    "otherSources": [
+      {
+        "source": "FRHoF",
+        "page": 134
+      }
+    ],
+    "rarity": "rare",
+    "wondrous": true,
+    "value": 400000,
+    "recharge": "dawn",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "This small piece of jewelry has 3 charges and regains all expended charges daily at dawn. While you are holding it, you can take a {@action Magic|XPHB} action to expend 1 charge, which causes the jewelry to transform into a sail-powered personal vehicle. The vehicle is roughly the size and shape of a household door with a 10-foot-tall sail extending from one side. After 1 hour or until you use the item's command word (no action required), the transformation ends and the Windskiff reverts to its jewelry form.",
+      "In vehicle form, a Windskiff is a Medium object with the following statistics: AC 12, HP 30, and {@variantrule Speed|XPHB} 40 ft. The Windskiff hovers a few inches above whatever surface it's on and can glide; it moves 5 feet horizontally for every 1 foot it descends in the air. A Windskiff and its riders take no damage from falling."
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Yellow Death",
+    "source": "FRAiF",
+    "page": 237,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "value": 15000,
+    "poison": true,
+    "entries": [
+      "A creature subjected to Yellow Death makes a {@dc 13} Constitution saving throw. On a failed save, the creature takes 14 ({@dice 4d6}) Poison damage and has the {@condition Poisoned|XPHB} condition for 1 minute. On a successful save, the creature takes half as much damage only."
+    ],
+    "poisonTypes": [
+      "ingested"
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  }
+]

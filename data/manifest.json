@@ -1,0 +1,410 @@
+{
+  "total": 2607,
+  "sources": [
+    {
+      "code": "AAG",
+      "count": 20,
+      "file": "sources/AAG.json"
+    },
+    {
+      "code": "AI",
+      "count": 23,
+      "file": "sources/AI.json"
+    },
+    {
+      "code": "AitFR-AVT",
+      "count": 3,
+      "file": "sources/AitFR-AVT.json"
+    },
+    {
+      "code": "AitFR-THP",
+      "count": 1,
+      "file": "sources/AitFR-THP.json"
+    },
+    {
+      "code": "AU",
+      "count": 75,
+      "file": "sources/AU.json"
+    },
+    {
+      "code": "AUD",
+      "count": 9,
+      "file": "sources/AUD.json"
+    },
+    {
+      "code": "AZfyT",
+      "count": 1,
+      "file": "sources/AZfyT.json"
+    },
+    {
+      "code": "BAM",
+      "count": 1,
+      "file": "sources/BAM.json"
+    },
+    {
+      "code": "BGDIA",
+      "count": 13,
+      "file": "sources/BGDIA.json"
+    },
+    {
+      "code": "BGG",
+      "count": 31,
+      "file": "sources/BGG.json"
+    },
+    {
+      "code": "BMT",
+      "count": 73,
+      "file": "sources/BMT.json"
+    },
+    {
+      "code": "CM",
+      "count": 12,
+      "file": "sources/CM.json"
+    },
+    {
+      "code": "CoA",
+      "count": 24,
+      "file": "sources/CoA.json"
+    },
+    {
+      "code": "CoS",
+      "count": 14,
+      "file": "sources/CoS.json"
+    },
+    {
+      "code": "CRCotN",
+      "count": 14,
+      "file": "sources/CRCotN.json"
+    },
+    {
+      "code": "DC",
+      "count": 2,
+      "file": "sources/DC.json"
+    },
+    {
+      "code": "DitLCoT",
+      "count": 3,
+      "file": "sources/DitLCoT.json"
+    },
+    {
+      "code": "DMG",
+      "count": 500,
+      "file": "sources/DMG.json"
+    },
+    {
+      "code": "DSotDQ",
+      "count": 5,
+      "file": "sources/DSotDQ.json"
+    },
+    {
+      "code": "EET",
+      "count": 1,
+      "file": "sources/EET.json"
+    },
+    {
+      "code": "EFA",
+      "count": 6,
+      "file": "sources/EFA.json"
+    },
+    {
+      "code": "EGW",
+      "count": 85,
+      "file": "sources/EGW.json"
+    },
+    {
+      "code": "ERLW",
+      "count": 30,
+      "file": "sources/ERLW.json"
+    },
+    {
+      "code": "FRAiF",
+      "count": 18,
+      "file": "sources/FRAiF.json"
+    },
+    {
+      "code": "FRHoF",
+      "count": 24,
+      "file": "sources/FRHoF.json"
+    },
+    {
+      "code": "FTD",
+      "count": 24,
+      "file": "sources/FTD.json"
+    },
+    {
+      "code": "GGR",
+      "count": 41,
+      "file": "sources/GGR.json"
+    },
+    {
+      "code": "GoS",
+      "count": 6,
+      "file": "sources/GoS.json"
+    },
+    {
+      "code": "HAT-LMI",
+      "count": 5,
+      "file": "sources/HAT-LMI.json"
+    },
+    {
+      "code": "HftT",
+      "count": 1,
+      "file": "sources/HftT.json"
+    },
+    {
+      "code": "HotB",
+      "count": 2,
+      "file": "sources/HotB.json"
+    },
+    {
+      "code": "HotDQ",
+      "count": 6,
+      "file": "sources/HotDQ.json"
+    },
+    {
+      "code": "ICC",
+      "count": 31,
+      "file": "sources/ICC.json"
+    },
+    {
+      "code": "IDRotF",
+      "count": 31,
+      "file": "sources/IDRotF.json"
+    },
+    {
+      "code": "IMR",
+      "count": 11,
+      "file": "sources/IMR.json"
+    },
+    {
+      "code": "JttRC",
+      "count": 5,
+      "file": "sources/JttRC.json"
+    },
+    {
+      "code": "KftGV",
+      "count": 8,
+      "file": "sources/KftGV.json"
+    },
+    {
+      "code": "LFL",
+      "count": 2,
+      "file": "sources/LFL.json"
+    },
+    {
+      "code": "LLK",
+      "count": 13,
+      "file": "sources/LLK.json"
+    },
+    {
+      "code": "LMoP",
+      "count": 5,
+      "file": "sources/LMoP.json"
+    },
+    {
+      "code": "LoX",
+      "count": 1,
+      "file": "sources/LoX.json"
+    },
+    {
+      "code": "MCV2DC",
+      "count": 1,
+      "file": "sources/MCV2DC.json"
+    },
+    {
+      "code": "MM",
+      "count": 4,
+      "file": "sources/MM.json"
+    },
+    {
+      "code": "MOT",
+      "count": 12,
+      "file": "sources/MOT.json"
+    },
+    {
+      "code": "MTF",
+      "count": 4,
+      "file": "sources/MTF.json"
+    },
+    {
+      "code": "NF",
+      "count": 8,
+      "file": "sources/NF.json"
+    },
+    {
+      "code": "NRH-AT",
+      "count": 2,
+      "file": "sources/NRH-AT.json"
+    },
+    {
+      "code": "NRH-TLT",
+      "count": 1,
+      "file": "sources/NRH-TLT.json"
+    },
+    {
+      "code": "OGA",
+      "count": 1,
+      "file": "sources/OGA.json"
+    },
+    {
+      "code": "OotA",
+      "count": 16,
+      "file": "sources/OotA.json"
+    },
+    {
+      "code": "PaBTSO",
+      "count": 23,
+      "file": "sources/PaBTSO.json"
+    },
+    {
+      "code": "PHB",
+      "count": 168,
+      "file": "sources/PHB.json"
+    },
+    {
+      "code": "PotA",
+      "count": 20,
+      "file": "sources/PotA.json"
+    },
+    {
+      "code": "PSX",
+      "count": 50,
+      "file": "sources/PSX.json"
+    },
+    {
+      "code": "QftIS",
+      "count": 11,
+      "file": "sources/QftIS.json"
+    },
+    {
+      "code": "RHW",
+      "count": 2,
+      "file": "sources/RHW.json"
+    },
+    {
+      "code": "RMBRE",
+      "count": 1,
+      "file": "sources/RMBRE.json"
+    },
+    {
+      "code": "RoT",
+      "count": 3,
+      "file": "sources/RoT.json"
+    },
+    {
+      "code": "RoTOS",
+      "count": 4,
+      "file": "sources/RoTOS.json"
+    },
+    {
+      "code": "SatO",
+      "count": 5,
+      "file": "sources/SatO.json"
+    },
+    {
+      "code": "SCC",
+      "count": 18,
+      "file": "sources/SCC.json"
+    },
+    {
+      "code": "SDW",
+      "count": 1,
+      "file": "sources/SDW.json"
+    },
+    {
+      "code": "SKT",
+      "count": 20,
+      "file": "sources/SKT.json"
+    },
+    {
+      "code": "TCE",
+      "count": 84,
+      "file": "sources/TCE.json"
+    },
+    {
+      "code": "TftYP",
+      "count": 23,
+      "file": "sources/TftYP.json"
+    },
+    {
+      "code": "ToA",
+      "count": 26,
+      "file": "sources/ToA.json"
+    },
+    {
+      "code": "TTP",
+      "count": 1,
+      "file": "sources/TTP.json"
+    },
+    {
+      "code": "UtHftLH",
+      "count": 1,
+      "file": "sources/UtHftLH.json"
+    },
+    {
+      "code": "VEoR",
+      "count": 3,
+      "file": "sources/VEoR.json"
+    },
+    {
+      "code": "VGM",
+      "count": 7,
+      "file": "sources/VGM.json"
+    },
+    {
+      "code": "VRGR",
+      "count": 5,
+      "file": "sources/VRGR.json"
+    },
+    {
+      "code": "WBtW",
+      "count": 19,
+      "file": "sources/WBtW.json"
+    },
+    {
+      "code": "WDH",
+      "count": 28,
+      "file": "sources/WDH.json"
+    },
+    {
+      "code": "WDMM",
+      "count": 26,
+      "file": "sources/WDMM.json"
+    },
+    {
+      "code": "WoW",
+      "count": 64,
+      "file": "sources/WoW.json"
+    },
+    {
+      "code": "WttHC",
+      "count": 8,
+      "file": "sources/WttHC.json"
+    },
+    {
+      "code": "XDMG",
+      "count": 584,
+      "file": "sources/XDMG.json"
+    },
+    {
+      "code": "XGE",
+      "count": 43,
+      "file": "sources/XGE.json"
+    },
+    {
+      "code": "XMM",
+      "count": 1,
+      "file": "sources/XMM.json"
+    },
+    {
+      "code": "XMtS",
+      "count": 6,
+      "file": "sources/XMtS.json"
+    },
+    {
+      "code": "XPHB",
+      "count": 123,
+      "file": "sources/XPHB.json"
+    }
+  ]
+}

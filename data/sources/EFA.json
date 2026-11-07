@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Boots of the Winding Path",
+    "source": "EFA",
+    "page": 112,
+    "referenceSources": [
+      "FFotR"
+    ],
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "While wearing these boots, you can take a {@variantrule Bonus Action|XPHB} to teleport up to 15 feet to an unoccupied space you can see. You must have occupied that space at some point during the current turn."
+    ],
+    "classFeatures": [
+      "replicate magic item|artificer|efa|2|efa"
+    ]
+  },
+  {
+    "name": "Helm of Awareness",
+    "source": "EFA",
+    "page": 112,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "While wearing this helmet, you have {@variantrule Advantage|XPHB} on {@variantrule Initiative|XPHB} rolls."
+    ],
+    "classFeatures": [
+      "replicate magic item|artificer|efa|2|efa"
+    ]
+  },
+  {
+    "name": "Manifold Tool",
+    "source": "EFA",
+    "page": 112,
+    "rarity": "common",
+    "reqAttune": true,
+    "wondrous": true,
+    "grantsProficiency": true,
+    "entries": [
+      "This tool takes the form of a wrench, a screwdriver, or another basic tool. As a {@action Magic|XPHB} action, you can touch the item and transform it into a type of {@item Artisan's Tools|XPHB} of your choice. Whatever form the tool takes, you have proficiency with it when you use it."
+    ],
+    "classFeatures": [
+      "replicate magic item|artificer|efa|2|efa"
+    ]
+  },
+  {
+    "name": "Mind Sharpener",
+    "source": "EFA",
+    "page": 112,
+    "type": "RG|XDMG",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "recharge": "dawn",
+    "rechargeAmount": "{@dice 1d4}",
+    "charges": 4,
+    "entries": [
+      "The item has 4 charges. When you fail a Constitution saving throw to maintain {@status Concentration|XPHB}, you can take a {@variantrule Reaction|XPHB} and expend 1 of the item's charges to succeed instead. The item regains {@dice 1d4} expended charges daily at dawn."
+    ],
+    "classFeatures": [
+      "replicate magic item|artificer|efa|2|efa"
+    ]
+  },
+  {
+    "name": "Repulsion Shield",
+    "source": "EFA",
+    "page": 112,
+    "baseItem": "shield|xphb",
+    "type": "S|XPHB",
+    "rarity": "uncommon",
+    "weight": 6,
+    "ac": 2,
+    "bonusAc": "+1",
+    "recharge": "dawn",
+    "rechargeAmount": "{@dice 1d4}",
+    "charges": 4,
+    "entries": [
+      "You gain a +1 bonus to {@variantrule Armor Class|XPHB} while wielding this shield.",
+      "The shield has 4 charges. While holding it, when a Large or smaller creature within 5 feet of you hits you with a melee attack roll, you can take a {@variantrule Reaction|XPHB} to expend 1 of the shield's charges and push the attacker up to 15 feet straight away. The shield regains {@dice 1d4} expended charges daily at dawn."
+    ],
+    "classFeatures": [
+      "replicate magic item|artificer|efa|2|efa"
+    ]
+  },
+  {
+    "name": "Spell-Refueling Ring",
+    "source": "EFA",
+    "page": 112,
+    "type": "RG|XDMG",
+    "rarity": "uncommon",
+    "reqAttune": "by a spellcaster",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "entries": [
+      "While wearing this ring, you can recover one expended spell slot as a {@variantrule Bonus Action|XPHB}. The recovered slot can be of level 3 or lower. Once used, the ring can't be used again until the next dawn."
+    ],
+    "classFeatures": [
+      "replicate magic item|artificer|efa|2|efa"
+    ]
+  }
+]

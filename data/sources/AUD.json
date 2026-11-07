@@ -1,0 +1,368 @@
+[
+  {
+    "name": "Crystal Ball of Ominous Portent",
+    "source": "AUD",
+    "page": 118,
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "Black-and-scarlet clouds of ominous magic swirl inside this crystal orb. While touching the orb, you can cast {@spell Hex|XPHB} or {@spell Scrying|XPHB} (save {@dc 17}) with it.",
+      "In addition, when a creature you can see within 60 feet succeeds on a {@variantrule D20 Test|XPHB}, you can take a {@variantrule Reaction|XPHB} to turn the roll into a 1. Once used, this property can't be used again until the next dawn."
+    ],
+    "attachedSpells": {
+      "will": [
+        "hex|xphb",
+        "scrying|xphb"
+      ]
+    },
+    "hasFluffImages": true
+  },
+  {
+    "name": "Eyes of Deceit",
+    "source": "AUD",
+    "page": 118,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "These tinted crystal lenses shroud your eyes. While wearing them, you gain a +5 bonus to Charisma ({@skill Deception|XPHB}) checks."
+    ]
+  },
+  {
+    "name": "Masquerader's Brooch",
+    "source": "AUD",
+    "page": 118,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "A Masquerader's Brooch comes in various shapes and sizes but always looks slightly tarnished.",
+      "You gain the following benefits while wearing the brooch.",
+      {
+        "type": "entries",
+        "name": "Illusory Fashion",
+        "entries": [
+          "As a {@variantrule Bonus Action|XPHB} while wearing or holding the brooch, you can project a magical illusion over your clothing, armor, weapons, equipment, and other belongings on your person. The illusion lasts for 1 hour and ends early if the brooch is removed. Each time you use this benefit, you determine the extent and nature of the illusion. It could be as minor as changing the color of your garments or as extensive as making a suit of armor appear as an evening gown and a sheathed weapon appear as a satin sash.",
+          "The changes wrought by this illusion fail to hold up to physical inspection. A creature that takes the {@action Study|XPHB} action to examine your appearance discerns the illusion with a successful {@dc 13} Intelligence ({@skill Investigation|XPHB}) check."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Shifting Guise",
+        "entries": [
+          "As a {@action Magic|XPHB} action while wearing or holding the brooch, you can cast {@spell Alter Self|XPHB} from it (Change Appearance option only; no {@status Concentration|XPHB} required)."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "alter self|xphb"
+      ]
+    },
+    "hasFluffImages": true
+  },
+  {
+    "name": "Ring of Candor",
+    "source": "AUD",
+    "page": 118,
+    "type": "RG|XDMG",
+    "rarity": "uncommon",
+    "entries": [
+      "While wearing this simple metal band, you gain a +5 bonus to Wisdom ({@skill Insight|XPHB}) checks. In addition, you can cast {@spell Zone of Truth|XPHB} (save {@dc 13}) from the ring. You can't cast {@spell Zone of Truth|XPHB} in this way again until the next dawn."
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "zone of truth|xphb"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Robe of Thayan Arcana",
+    "source": "AUD",
+    "page": 119,
+    "rarity": "very rare",
+    "reqAttune": "by a Sorcerer, Warlock, or Wizard",
+    "reqAttuneTags": [
+      {
+        "class": "sorcerer"
+      },
+      {
+        "class": "warlock"
+      },
+      {
+        "class": "wizard"
+      }
+    ],
+    "wondrous": true,
+    "bonusSpellAttack": "+1",
+    "bonusSpellSaveDc": "+1",
+    "focus": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ],
+    "entries": [
+      "Mysterious symbols decorate this deep-red robe. You gain the following benefits while wearing the robe.",
+      {
+        "type": "entries",
+        "name": "Combat Mage",
+        "entries": [
+          "Your spell save DC and spell attack bonus each increase by 1."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Empowered Magic",
+        "entries": [
+          "When you roll damage for a spell, you can treat any 1 on a damage die as a 2."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spellcasting Focus",
+        "entries": [
+          "You can use the robe as a {@variantrule Spellcasting Focus|XPHB} for your spells."
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  },
+  {
+    "name": "Scarlet Spellbook",
+    "source": "AUD",
+    "page": 119,
+    "rarity": "rare",
+    "reqAttune": "by a Wizard",
+    "reqAttuneTags": [
+      {
+        "class": "wizard"
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "Irregular scraps of red cloth cover this weathered tome. While attuned to this item, you can use it as a Spellbook and an {@item Arcane Focus|XPHB}.",
+      {
+        "type": "entries",
+        "name": "Arcane Stamina",
+        "entries": [
+          "When you use your Arcane Recovery feature, you also regain {@variantrule Hit Points|XPHB} equal to {@dice 2d6} plus half your Wizard level (round down)."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Improved Spell Recall",
+        "entries": [
+          "When you use your Memorize Spell feature, you can replace an additional level 1+ Wizard spell you have prepared for your Spellcasting feature with another level 1+ spell inscribed in this book."
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  },
+  {
+    "name": "Spirit-Binding Censer",
+    "source": "AUD",
+    "page": 120,
+    "rarity": "artifact",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "dawn",
+    "rechargeAmount": "{@dice 1d6}",
+    "charges": 10,
+    "entries": [
+      "This brass censer is comfortingly warm to the touch.",
+      {
+        "type": "entries",
+        "name": "Spellcasting",
+        "entries": [
+          "The censer has 10 charges and regains {@dice 1d6} charges daily at dawn. While holding the censer, you can cast a spell on the Censer Spells table from it (save {@dc 18}). The table indicates how many charges you must expend to cast the spell."
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "Censer Spells",
+        "colLabels": [
+          "Spell",
+          "Charge Cost"
+        ],
+        "colStyles": [
+          "col-10",
+          "col-2 text-center"
+        ],
+        "rows": [
+          [
+            "{@spell Banishment|XPHB}",
+            "4"
+          ],
+          [
+            "{@spell Bless|XPHB}",
+            "1"
+          ],
+          [
+            "{@spell Circle of Power|XPHB}",
+            "5"
+          ],
+          [
+            "{@spell Dispel Magic|XPHB}",
+            "3"
+          ],
+          [
+            "{@spell Remove Curse|XPHB}",
+            "3"
+          ]
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Protective Incense",
+        "entries": [
+          "As a {@action Magic|XPHB} action while holding the censer, you can cause magical smoke to billow from the censer, filling a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the censer for 1 hour or until you end it (no action required). The area of the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} is {@variantrule Lightly Obscured|XPHB}, and creatures of your choice (including yourself) gain the benefits of the {@spell Protection from Evil and Good|XPHB} spell while within the {@variantrule Emanation [Area of Effect]|XPHB|Emanation}. Once used, this property can't be used again until the next dawn."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spirit Imprisonment",
+        "entries": [
+          "When a creature dies within 30 feet of you while you're holding the censer, you can siphon the creature's soul into the censer, trapping it within.",
+          "While a creature's soul is trapped within the censer, that creature can't be restored to life. If the creature had a trait that would allow it to revive, such as a {@creature Barbed Devil|XMM}'s Diabolical Restoration trait or a {@creature Lich|XMM}'s Spirit Jar trait, that trait doesn't function while the creature's soul is trapped. The censer can contain only one soul at a time. A creature's soul remains trapped within the censer for 100 years, until you take a {@action Magic|XPHB} action to release the soul, or until the censer is destroyed (see \"Destroying the Censer\" below)."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Random Properties",
+        "entries": [
+          "The censer has the following random properties (see the Dungeon Master's Guide):",
+          {
+            "type": "list",
+            "items": [
+              "1 {@table Artifact Properties; Minor Beneficial Properties|XDMG|minor beneficial} property",
+              "1 {@table Artifact Properties; Major Beneficial Properties|XDMG|major beneficial} property"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Destroying the Censer",
+        "entries": [
+          "If it doesn't contain a soul, the censer is destroyed after being submerged in the River Styx for 1 year."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "bless|xphb"
+        ],
+        "3": [
+          "dispel magic|xphb",
+          "remove curse|xphb"
+        ],
+        "4": [
+          "banishment|xphb"
+        ],
+        "5": [
+          "circle of power|xphb"
+        ]
+      },
+      "daily": {
+        "1e": [
+          "protection from evil and good|xphb"
+        ]
+      }
+    },
+    "hasFluffImages": true
+  },
+  {
+    "name": "Staff of the Spirit Aegis",
+    "source": "AUD",
+    "page": 120,
+    "type": "M|XPHB",
+    "resist": [
+      "necrotic"
+    ],
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "Topple|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusWeapon": "+3",
+    "staff": true,
+    "entries": [
+      "This weathered bone {@item staff|XPHB} is topped with a skull and decorated with vertebrae. It can be wielded as a magic {@item Quarterstaff|XPHB} that grants a +3 bonus to attack rolls and damage rolls made with it. While holding the {@item staff|XPHB}, you have {@variantrule Resistance|XPHB} to Necrotic damage.",
+      {
+        "type": "entries",
+        "name": "Aura of Haunted Power",
+        "entries": [
+          "As a {@action Magic|XPHB} action while holding the {@item staff|XPHB}, you can cause it to radiate supernatural power that fills a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you. Creatures of your choice in this {@variantrule Emanation [Area of Effect]|XPHB|Emanation} (including yourself) gain the following benefits:",
+          {
+            "type": "list",
+            "style": "list-hang-notitle",
+            "items": [
+              {
+                "type": "item",
+                "name": "Undead Deterrent",
+                "entry": "Undead have {@variantrule Disadvantage|XPHB} on attack rolls against the creatures."
+              },
+              {
+                "type": "item",
+                "name": "Unholy Protection",
+                "entry": "The creatures have {@variantrule Resistance|XPHB} to Cold, Necrotic, and Psychic damage, and they have {@variantrule Advantage|XPHB} on saving throws to avoid or end the {@condition Frightened|XPHB} condition."
+              }
+            ]
+          },
+          "The {@variantrule Emanation [Area of Effect]|XPHB|Emanation} lasts for 1 hour or until you end it (no action required). Once used, this property can't be used again until the next dawn."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Illuminating Sight",
+        "entries": [
+          "As a {@variantrule Bonus Action|XPHB} while holding the {@item staff|XPHB}, you can cause the eye sockets of the skull atop the {@item staff|XPHB} to emit an unearthly glow; this glow lasts until you stop it (no action required). While the {@item staff|XPHB} glows, it sheds {@variantrule Bright Light|XPHB} in a 15-foot radius and {@variantrule Dim Light|XPHB} for an additional 15 feet. {@condition Invisible|XPHB} creatures and objects are visible as long as they are in the {@item staff|XPHB}'s {@variantrule Bright Light|XPHB} or {@variantrule Dim Light|XPHB}."
+        ]
+      }
+    ],
+    "light": [
+      {
+        "bright": 15,
+        "dim": 30
+      }
+    ],
+    "hasFluffImages": true
+  },
+  {
+    "name": "Wand of Enthralling",
+    "source": "AUD",
+    "page": 121,
+    "type": "WD|XDMG",
+    "rarity": "uncommon",
+    "reqAttune": "by a Spellcaster",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "recharge": "dawn",
+    "rechargeAmount": "{@dice 1d4}",
+    "charges": 4,
+    "entries": [
+      "This wand has 4 charges and regains {@dice 1d4} expended charges daily at dawn. While holding it, you can expend 1 charge to cast {@spell Enthrall|XPHB} (save {@dc 15}) from it."
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "enthrall|xphb"
+        ]
+      }
+    }
+  }
+]

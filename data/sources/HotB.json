@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Borderlands Tabard",
+    "source": "HotB",
+    "page": 16,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "entries": [
+      "While you're wearing this tabard, NPCs in the Keep on the Borderlands are initially {@variantrule Friendly [Attitude]|XPHB|Friendly} toward you."
+    ]
+  },
+  {
+    "name": "Cultist's Robe",
+    "source": "HotB",
+    "page": 19,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "entries": [
+      "While wearing this occult outfit, you have {@variantrule Advantage|XPHB} on any ability check you make to impersonate a cultist in the Cult of Chaos."
+    ]
+  }
+]

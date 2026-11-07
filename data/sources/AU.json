@@ -1,0 +1,2497 @@
+[
+  {
+    "name": "Arcane Chatelaine",
+    "source": "AU",
+    "page": 116,
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "This ornate clasp has six spectral keys attached to it. As a {@action Magic|XPHB} action, you can touch one of the keys to a closed door, window, gate, container, or hatch to cast the {@spell Arcane Lock|XPHB} spell on it. Once a key is used, it disappears. When all six keys have disappeared, the chatelaine disappears."
+    ],
+    "attachedSpells": {
+      "limited": {
+        "6": [
+          "arcane lock|xphb"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Arcanist's Bestiary",
+    "source": "AU",
+    "page": 116,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "grantsProficiency": true,
+    "entries": [
+      "Hundreds of pages of illustrations, tables, and diagrams about a wide variety of monsters fill this magical tome.",
+      {
+        "type": "entries",
+        "name": "Charm Monster",
+        "entries": [
+          "While holding the book, you can cast the {@spell Charm Monster|XPHB} spell (spell save {@dc 15}) from it. The target has {@variantrule Disadvantage|XPHB} on the saving throw against this spell if it isn't a Humanoid. You can't cast this spell again in this way until the next dawn."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Extensive Knowledge",
+        "entries": [
+          "When you become attuned to the book, you gain proficiency in one of the following skills of your choice: {@skill Arcana|XPHB}, {@skill History|XPHB}, {@skill Nature|XPHB}, or {@skill Religion|XPHB}. Whenever you finish a {@variantrule Long Rest|XPHB}, you can change your choice. If your {@variantrule Attunement|XPHB} to the book ends, you lose this proficiency."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Monster Primer",
+        "entries": [
+          "While carrying the book, whenever you take a {@action Study|XPHB} action to make an Intelligence ({@skill Arcana|XPHB}) check to recall information about an Aberration, Construct, Elemental, Fey, or Monstrosity you can see, on a successful check, you learn whether that creature has any Immunities, Resistances, or Vulnerabilities. If the creature has any, you know what they are."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "charm monster|xphb"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Bejeweled Conclave Trinket",
+    "source": "AU",
+    "page": 84,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "entries": [
+      {
+        "type": "table",
+        "caption": "Bejeweled Conclave Trinkets",
+        "page": 84,
+        "colLabels": [
+          "{@dice 1d6}",
+          "Trinket"
+        ],
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "rows": [
+          [
+            "1",
+            "An empty perfume bottle that smells faintly of longing"
+          ],
+          [
+            "2",
+            "Three love letters in the same handwriting, signed with different names"
+          ],
+          [
+            "3",
+            "A silk scarf with several hidden pockets"
+          ],
+          [
+            "4",
+            "The signature page from a contract"
+          ],
+          [
+            "5",
+            "A drinking glass carved with a comet"
+          ],
+          [
+            "6",
+            "A gaudy engagement ring with a fake gem"
+          ]
+        ]
+      }
+    ],
+    "miscTags": [
+      "TT"
+    ]
+  },
+  {
+    "name": "Bellows of Strangulation",
+    "source": "AU",
+    "page": 116,
+    "rarity": "rare",
+    "wondrous": true,
+    "recharge": "dawn",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 6,
+    "entries": [
+      "This bellows has 6 charges. While you are holding it, you can take a {@action Magic|XPHB} action and use one of three command words to cause one of the following effects:",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "First Command Word",
+            "entry": "You expend 1 charge to cause the bellows to suck the energy from one creature you can see within 60 feet. The creature must succeed on a {@dc 15} Constitution saving throw or have the {@condition Incapacitated|XPHB} condition for 1 minute. The creature repeats the save at the end of each of its turns, ending the effect on itself on a success."
+          },
+          {
+            "type": "item",
+            "name": "Second Command Word",
+            "entry": "You expend 3 charges to cause the bellows to suck the energy from creatures in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. Each creature in that area must succeed on a {@dc 15} Constitution saving throw or have the {@condition Incapacitated|XPHB} condition for 1 minute. An affected creature repeats the save at the end of each of its turns, ending the effect on itself on a success."
+          },
+          {
+            "type": "item",
+            "name": "Third Command Word",
+            "entry": "You expend 5 charges to cast the {@spell Cloudkill|XPHB} spell (spell {@dc 17}) from the bellows."
+          }
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Regaining Charges",
+        "entries": [
+          "The bellows regains {@dice 1d6 + 1} charges daily at dawn. If you expend the last charge, roll {@dice 1d20}. On a 1, the bellows explodes in a harmless burst of wind and is lost forever."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "5": [
+          "cloudkill|xphb"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Blemished Idol of Good Fortunes",
+    "source": "AU",
+    "page": 127,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "Evo|AU"
+    ],
+    "entries": [
+      {
+        "type": "entries",
+        "name": "Blemished",
+        "entries": [
+          "The idol is made of tarnished bronze, with minor dings and dents scattered over its surface.",
+          "You can cast the {@spell Augury|XPHB} spell from the idol. The idol speaks the omen aloud in response. Once the idol has been used to cast this spell, it can't be used to cast this spell again until the next dawn."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "augury|xphb"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Blood Amulet",
+    "source": "AU",
+    "page": 116,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "dawn",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "This delicate amulet looks like a diminutive beating heart impaled with spikes. It has 3 charges and regains {@dice 1d3} charges daily at dawn.",
+      "Whenever you deal damage to a creature, you can expend 1 charge to deal an extra {@damage 2d10} Necrotic damage to the target and force it to make a {@dc 15} Constitution saving throw. On a failed save, the target gains 1 {@condition Exhaustion|XPHB} level."
+    ],
+    "hasFluffImages": true
+  },
+  {
+    "name": "Boon Companions' Bands",
+    "source": "AU",
+    "page": 117,
+    "type": "RG|XDMG",
+    "rarity": "uncommon",
+    "entries": [
+      "Boon Companions' Bands come in pairs and bear matching engravings. While wearing one of the bands, when you cast a spell or use a feature that forces other creatures in its area of effect to make a saving throw, you can protect the creature wearing the matching band if the creature is in the effect's area. That creature automatically succeeds on its saving throw against the effect, and it takes no damage if it would normally take half damage on a successful save.",
+      "Once this property is used by either band, the bands can't be used again until the next dawn. If one of the bands in a pair is destroyed, the other one crumbles to dust."
+    ]
+  },
+  {
+    "name": "Bringers of Cosmic Dawn Trinket",
+    "source": "AU",
+    "page": 87,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "entries": [
+      {
+        "type": "table",
+        "caption": "Bringers of Cosmic Dawn Trinkets",
+        "page": 87,
+        "colLabels": [
+          "{@dice 1d6}",
+          "Trinket"
+        ],
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "rows": [
+          [
+            "1",
+            "A razor-sharp, violet-tinted talon"
+          ],
+          [
+            "2",
+            "An uneven spyglass lens that casts flickering pale-green light"
+          ],
+          [
+            "3",
+            "A stone carved with stars in an unfamiliar constellation"
+          ],
+          [
+            "4",
+            "Fragments of a prophecy about flumphs"
+          ],
+          [
+            "5",
+            "A fern frond that twitches like a tentacle"
+          ],
+          [
+            "6",
+            "A small box containing a worm that won't die"
+          ]
+        ]
+      }
+    ],
+    "miscTags": [
+      "TT"
+    ]
+  },
+  {
+    "name": "Budding Blossom Rod",
+    "source": "AU",
+    "page": 127,
+    "type": "RD|XDMG",
+    "rarity": "uncommon",
+    "reqAttune": "by a Spellcaster",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "property": [
+      "Evo|AU"
+    ],
+    "entries": [
+      {
+        "type": "entries",
+        "name": "Budding",
+        "entries": [
+          "Multicolored leaves decorate the rod's stems, and a few buds cluster near each end.",
+          "While you hold the rod, you can cast {@spell Druidcraft|XPHB} or {@spell Plant Growth|XPHB} (Overgrowth only) from it. Once the rod has been used to cast {@spell Plant Growth|XPHB}, it can't be used to cast this spell again until the next dawn.",
+          "While you hold the rod, as a {@action Magic|XPHB} action, you can rejuvenate nonmagical plants in a 5-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} you can see within 15 feet of yourself. The rejuvenated plants remain verdant for {@dice 1d4} days, after which they grow or wither as normal plants would."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "druidcraft|xphb"
+      ],
+      "daily": {
+        "1e": [
+          "plant growth|xphb"
+        ]
+      }
+    },
+    "hasFluffImages": true
+  },
+  {
+    "name": "Chattering Staff of Skulls",
+    "source": "AU",
+    "page": 128,
+    "_copy": {
+      "name": "Ominous Staff of Skulls",
+      "source": "AU",
+      "_mod": {
+        "property": {
+          "mode": "appendIfNotExistsArr",
+          "items": "Evo|AU"
+        },
+        "entries": {
+          "mode": "appendArr",
+          "items": {
+            "type": "entries",
+            "name": "Chattering",
+            "entries": [
+              "Several skulls fused together adorn the top of the staff.",
+              "When a creature you can see within 30 feet of you makes an attack roll, you can take a {@variantrule Reaction|XPHB} to impose {@variantrule Disadvantage|XPHB} on that roll, as the skulls' eyes glow green and their teeth chatter unnervingly."
+            ]
+          }
+        }
+      }
+    },
+    "rarity": "rare",
+    "hasFluffImages": true
+  },
+  {
+    "name": "Conjurer's Canopy",
+    "source": "AU",
+    "page": 117,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "You can take a {@action Magic|XPHB} action and use a command word to plunge this magical walking stick into the ground, where it stands straight up and projects a canopy of transparent force in a 20-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} originating from the stick. The canopy lasts for 1 hour or until you end the effect early as a {@action Magic|XPHB} action.",
+      "The canopy protects creatures and objects within that area from ordinary weather phenomena such as rain or snow. The atmosphere within the canopy's area is comfortable and dry, regardless of the weather. Creatures, objects, and magical effects can still pass through the canopy as usual.",
+      "When the canopy disappears, the stick can't be used again for {@dice 1d12} hours."
+    ],
+    "hasFluffImages": true
+  },
+  {
+    "name": "Covenant of the Grave Trinket",
+    "source": "AU",
+    "page": 91,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "entries": [
+      {
+        "type": "table",
+        "caption": "Covenant of the Grave Trinkets",
+        "page": 91,
+        "colLabels": [
+          "{@dice 1d6}",
+          "Trinket"
+        ],
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "rows": [
+          [
+            "1",
+            "A tin of grave dirt"
+          ],
+          [
+            "2",
+            "A self-sterilizing trephine"
+          ],
+          [
+            "3",
+            "A chapbook with illustrations of graveyards"
+          ],
+          [
+            "4",
+            "A zombie's twitching toe"
+          ],
+          [
+            "5",
+            "A small wreath of dried flowers in an old box"
+          ],
+          [
+            "6",
+            "A mysterious organ in a jar of amber fluid"
+          ]
+        ]
+      }
+    ],
+    "miscTags": [
+      "TT"
+    ]
+  },
+  {
+    "name": "Crucible Keepers Trinket",
+    "source": "AU",
+    "page": 94,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "entries": [
+      {
+        "type": "table",
+        "caption": "Crucible Keepers Trinkets",
+        "page": 94,
+        "colLabels": [
+          "{@dice 1d6}",
+          "Trinket"
+        ],
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "rows": [
+          [
+            "1",
+            "A piece of metal pierced by a tornado-driven twig"
+          ],
+          [
+            "2",
+            "A tattered, salt-stained doll"
+          ],
+          [
+            "3",
+            "A chunk of volcanic glass"
+          ],
+          [
+            "4",
+            "Broken wind chimes"
+          ],
+          [
+            "5",
+            "A seashell blackened by a great fire"
+          ],
+          [
+            "6",
+            "Bark seared with lightning-shaped lines"
+          ]
+        ]
+      }
+    ],
+    "miscTags": [
+      "TT"
+    ]
+  },
+  {
+    "name": "Crusading Wand of Celestial Prowess",
+    "source": "AU",
+    "page": 133,
+    "_copy": {
+      "name": "+1 Wand of the War Mage",
+      "source": "XDMG",
+      "_mod": {
+        "property": {
+          "mode": "appendIfNotExistsArr",
+          "items": "Evo|AU"
+        },
+        "entries": {
+          "mode": "appendArr",
+          "items": {
+            "type": "entries",
+            "name": "Crusading",
+            "entries": [
+              "The Cleric's spellcasting skills help the characters defeat a group of fiendish cultists. The DM decides the wand evolves to become Rare, gaining the {@table Magic Item Property Tables; Rare Magic Item Properties|AU|Crusading} property."
+            ]
+          }
+        }
+      }
+    },
+    "rarity": "rare"
+  },
+  {
+    "name": "Diamond Staff",
+    "source": "AU",
+    "page": 118,
+    "type": "M|XPHB",
+    "rarity": "legendary",
+    "reqAttune": "by a Sorcerer, Warlock, or Wizard",
+    "reqAttuneTags": [
+      {
+        "class": "sorcerer"
+      },
+      {
+        "class": "warlock"
+      },
+      {
+        "class": "wizard"
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "Topple|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusWeapon": "+3",
+    "recharge": "dawn",
+    "rechargeAmount": "{@dice 1d6 + 4}",
+    "charges": 20,
+    "staff": true,
+    "entries": [
+      "This 6-foot-long scepter is carved from a single enormous crystal, with a perfect transparent globe at its head. This staff has 20 charges and can be wielded as a magic {@item Quarterstaff|XPHB} that grants a +3 bonus to attack rolls and damage rolls made with it.",
+      {
+        "type": "entries",
+        "name": "Adept",
+        "entries": [
+          "While holding the staff, you have {@variantrule Advantage|XPHB} on Intelligence ({@skill Arcana|XPHB}) checks."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Dazzling Light",
+        "entries": [
+          "While holding the staff, you can expend 1 charge and use a command word to cause light to shine from the staff. The staff emits {@variantrule Bright Light|XPHB} in a 40-foot radius and {@variantrule Dim Light|XPHB} for an additional 40 feet. The staff stops glowing after 1 minute or when you use a command word to deactivate it."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spells",
+        "entries": [
+          "While holding the staff, you can cast one of the spells on the following table from it, using your spell save DC. The table indicates how many charges you must expend to cast the spell."
+        ]
+      },
+      {
+        "type": "table",
+        "colLabels": [
+          "Spell",
+          "Charge Cost"
+        ],
+        "colStyles": [
+          "col-10",
+          "col-2 text-center"
+        ],
+        "rows": [
+          [
+            "{@spell Detect Magic|XPHB}",
+            "0"
+          ],
+          [
+            "{@spell Light|XPHB}",
+            "0"
+          ],
+          [
+            "{@spell Identify|XPHB}",
+            "1"
+          ],
+          [
+            "{@spell Maze|XPHB}",
+            "8"
+          ],
+          [
+            "{@spell Knock|XPHB}",
+            "2"
+          ],
+          [
+            "{@spell Tongues|XPHB} (self only)",
+            "0"
+          ],
+          [
+            "{@spell Legend Lore|XPHB}",
+            "5"
+          ],
+          [
+            "{@spell True Seeing|XPHB}",
+            "3"
+          ]
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Stunning Hit",
+        "entries": [
+          "When you hit with a melee attack using the staff, you can expend 2 charges, and the target must succeed on a {@dc 17} Constitution saving throw or have the {@condition Stunned|XPHB} condition until the end of your next turn."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Regaining Charges",
+        "entries": [
+          "The staff regains {@dice 1d6 + 4} expended charges daily at dawn. If you expend the last charge, roll {@dice 1d20}. On a 1, the staff is destroyed."
+        ]
+      }
+    ],
+    "light": [
+      {
+        "bright": 40,
+        "dim": 80
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "0": [
+          "detect magic|xphb",
+          "light|xphb",
+          "tongues|xphb"
+        ],
+        "1": [
+          "identify|xphb"
+        ],
+        "2": [
+          "knock|xphb"
+        ],
+        "3": [
+          "true seeing|xphb"
+        ],
+        "5": [
+          "legend lore|xphb"
+        ],
+        "8": [
+          "maze|xphb"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Dictation Quill",
+    "source": "AU",
+    "page": 118,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "When you take a {@action Magic|XPHB} action to set this magic quill next to Paper or Parchment and a bottle of Ink and use a command word, the quill writes your next spoken or signed words, in the language you're using, at a rate of 25 words per minute. The quill writes for 1 hour; until it has no Paper, Parchment, or Ink; or until you use another command word to stop it (no action required)."
+    ]
+  },
+  {
+    "name": "Dissuader",
+    "source": "AU",
+    "page": 118,
+    "type": "M|XPHB",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "Topple|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusWeapon": "+1",
+    "staff": true,
+    "entries": [
+      "This staff can be wielded as a magic {@item Quarterstaff|XPHB} that grants a +1 bonus to attack rolls and damage rolls made with it. It also has the following additional properties. Once one of these properties is used, that property can't be used again until the next dawn.",
+      {
+        "type": "entries",
+        "name": "Calm Emotions",
+        "entries": [
+          "You can cast the {@spell Calm Emotions|XPHB} spell (save {@dc 15}) from the staff."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Dissuading Aura",
+        "entries": [
+          "As a {@action Magic|XPHB} action while holding the staff, you can create a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} of mental unrest originating from you that lasts for 1 minute. Whenever the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} enters the space of a creature you can see and whenever a creature you can see enters the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} or ends its turn there, you can force that creature to make a {@dc 15} Wisdom saving throw. On a failed save, the creature has the {@condition Frightened|XPHB} condition until the start of its next turn."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Repel",
+        "entries": [
+          "When a creature enters a space within 5 feet of you, you can take a {@variantrule Reaction|XPHB} to create a shock wave of force. Each creature of your choice in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you must succeed on a {@dc 15} Strength saving throw or be pushed up to 30 feet straight away from you."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "calm emotions|xphb"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Dream Weaver",
+    "source": "AU",
+    "page": 119,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "This magic tapestry can be hung on a wall or another suitable vertical surface. The tapestry magically unravels and reweaves itself to illustrate the content and emotions of your most recent dreams.",
+      "You gain the following benefits while the tapestry is hung and you are within 30 feet of it.",
+      {
+        "type": "entries",
+        "name": "Dream Wisdom",
+        "entries": [
+          "During a {@variantrule Long Rest|XPHB}, you can spend an hour studying the tapestry. At the end of the {@variantrule Long Rest|XPHB}, roll {@dice 1d20} and record the number rolled. Once before you finish a {@variantrule Long Rest|XPHB}, you can replace any {@variantrule D20 Test|XPHB} you make with this result. You must choose to do so before you roll the {@variantrule D20 Test|XPHB}."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Message Recorder",
+        "entries": [
+          "If you are targeted by the {@spell Dream|XPHB} spell, the tapestry records the appearance and name of the spell's caster in its design."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Mind Wall",
+        "entries": [
+          "While you have the {@condition Unconscious|XPHB} condition, you have {@variantrule Advantage|XPHB} on Intelligence, Wisdom, and Charisma saving throws."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Elocutionist's Lexicon",
+    "source": "AU",
+    "page": 119,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "While holding this magic dictionary, you can take a {@action Magic|XPHB} action and try to recall a specific word. The book automatically opens to the page containing the exact word you're searching for."
+    ]
+  },
+  {
+    "name": "Ensorcelled Missive",
+    "source": "AU",
+    "page": 119,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "This item functions as a sheet of Parchment. After writing on it, you can take a {@action Magic|XPHB} action to fold or roll the sheet and seal it while speaking or signing a word or short phrase. If a creature unseals the sheet without using the same word or phrase, the writing on the sheet appears as if it were written in an unknown and unintelligible script."
+    ],
+    "hasFluffImages": true
+  },
+  {
+    "name": "Evergreen Fertilizer",
+    "source": "AU",
+    "page": 119,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "Once sprinkled on the soil around a nonmagical plant, this pungent powder keeps the plant healthy for the next 365 days."
+    ]
+  },
+  {
+    "name": "Flowering Blossom Rod",
+    "source": "AU",
+    "page": 127,
+    "_copy": {
+      "name": "Budding Blossom Rod",
+      "source": "AU",
+      "_mod": {
+        "property": {
+          "mode": "appendIfNotExistsArr",
+          "items": "Evo|AU"
+        },
+        "entries": {
+          "mode": "appendArr",
+          "items": {
+            "type": "entries",
+            "name": "Flowering",
+            "entries": [
+              "Both ends of the rod bear colorful, fragrant flowers.",
+              "While you hold the rod, you can cast {@spell Insect Plague|XPHB} from it, using your spell save DC. When you do so, the insects appear as bumblebees. Once the rod has been used to cast this spell, it can't be used to cast this spell again until the next dawn."
+            ]
+          }
+        }
+      }
+    },
+    "rarity": "rare",
+    "attachedSpells": {
+      "will": [
+        "druidcraft|xphb"
+      ],
+      "daily": {
+        "1e": [
+          "insect plague|xphb",
+          "plant growth|xphb"
+        ]
+      }
+    },
+    "hasFluffImages": true
+  },
+  {
+    "name": "Golden Idol of Good Fortunes",
+    "source": "AU",
+    "page": 127,
+    "_copy": {
+      "name": "Tarnished Idol of Good Fortunes",
+      "source": "AU",
+      "_mod": {
+        "property": {
+          "mode": "appendIfNotExistsArr",
+          "items": "Evo|AU"
+        },
+        "entries": {
+          "mode": "appendArr",
+          "items": {
+            "type": "entries",
+            "name": "Golden",
+            "entries": [
+              "The idol is made of gleaming gold, and the elephant's eyes are set with shining rubies.",
+              "While holding the idol, you can cast {@spell Globe of Invulnerability|XPHB} from it. Once the idol has been used to cast this spell, it can't be used to cast this spell again until the next dawn."
+            ]
+          }
+        }
+      }
+    },
+    "rarity": "very rare",
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "augury|xphb",
+          "globe of invulnerability|xphb"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Grave Reaper",
+    "source": "AU",
+    "page": 119,
+    "baseItem": "sickle|xphb",
+    "type": "M|XPHB",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "simple",
+    "property": [
+      "L|XPHB"
+    ],
+    "mastery": [
+      "Nick|XPHB"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "S",
+    "bonusWeapon": "+2",
+    "entries": [
+      "You gain a +2 bonus to attack rolls and damage rolls made with this magic weapon. When you hit a creature with it, the target takes an extra {@damage 2d8} Necrotic damage.",
+      {
+        "type": "entries",
+        "name": "Soul Lantern",
+        "entries": [
+          "While holding this weapon, you can cast the {@spell Spirit Lantern|AU} spell. When you cast the spell using the weapon, the conjured lantern can hold up to five soul fragments, and the spell's save DC is 17.",
+          "Once the weapon has been used to cast the spell, it can't be used to cast it again until the next dawn."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "spirit lantern|au"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Heliacal Wand of Celestial Prowess",
+    "source": "AU",
+    "page": 133,
+    "_copy": {
+      "name": "Lunar Wand of Celestial Prowess",
+      "source": "AU",
+      "_mod": {
+        "property": {
+          "mode": "appendIfNotExistsArr",
+          "items": "Evo|AU"
+        },
+        "entries": {
+          "mode": "appendArr",
+          "items": {
+            "type": "entries",
+            "name": "Heliacal",
+            "entries": [
+              "The Cleric becomes a paragon of his deity, so the DM decides the wand evolves to channel the might of a supernova, becoming Legendary and gaining the {@table Magic Item Property Tables; Legendary Magic Item Properties|AU|Heliacal} property."
+            ]
+          }
+        }
+      }
+    },
+    "rarity": "legendary"
+  },
+  {
+    "name": "Homeward Compass",
+    "source": "AU",
+    "page": 119,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "While holding this small brass compass, you can take a {@action Magic|XPHB} action to orient the compass to your current location. Thereafter, the compass's needle always points toward that location. The compass can be oriented to only one location at a time. As a {@action Magic|XPHB} action, you can end the compass's current orientation. When it isn't oriented to a particular location, or if the compass is on a different plane of existence than the location to which it is oriented, the compass's needle spins aimlessly."
+    ]
+  },
+  {
+    "name": "Horizon Weavers Trinket",
+    "source": "AU",
+    "page": 98,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "entries": [
+      {
+        "type": "table",
+        "caption": "Horizon Weavers Trinkets",
+        "page": 98,
+        "colLabels": [
+          "{@dice 1d6}",
+          "Trinket"
+        ],
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "rows": [
+          [
+            "1",
+            "A compass that spins lazily"
+          ],
+          [
+            "2",
+            "A map of a lost valley"
+          ],
+          [
+            "3",
+            "A chip of ice that never melts"
+          ],
+          [
+            "4",
+            "A ring inscribed \"bring me home again\""
+          ],
+          [
+            "5",
+            "Wicker from the basket of a hot air balloon"
+          ],
+          [
+            "6",
+            "Four orange leaves with unfamiliar shapes"
+          ]
+        ]
+      }
+    ],
+    "miscTags": [
+      "TT"
+    ]
+  },
+  {
+    "name": "Lucky Foot",
+    "source": "AU",
+    "page": 119,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "When you roll a 1 on a saving throw or ability check, you can use this preserved rabbit foot's magic to reroll the die. You must use the new roll, and the foot disintegrates."
+    ]
+  },
+  {
+    "name": "Lunar Wand of Celestial Prowess",
+    "source": "AU",
+    "page": 133,
+    "_copy": {
+      "name": "Crusading Wand of Celestial Prowess",
+      "source": "AU",
+      "_mod": {
+        "property": {
+          "mode": "appendIfNotExistsArr",
+          "items": "Evo|AU"
+        },
+        "entries": {
+          "mode": "appendArr",
+          "items": {
+            "type": "entries",
+            "name": "Lunar",
+            "entries": [
+              "The characters track down a devil that serves the Fiend the cultists worshiped. Thanks to the Cleric, the characters defeat the devil, and the DM decides the wand evolves, becoming Very Rare and gaining the {@table Magic Item Property Tables; Very Rare Magic Item Properties|AU|Lunar} property."
+            ]
+          }
+        }
+      }
+    },
+    "rarity": "very rare"
+  },
+  {
+    "name": "Mage Breaker",
+    "source": "AU",
+    "page": 120,
+    "baseItem": "dagger|xphb",
+    "type": "M|XPHB",
+    "rarity": "rare",
+    "weight": 1,
+    "weaponCategory": "simple",
+    "property": [
+      "F|XPHB",
+      "L|XPHB",
+      "T|XPHB"
+    ],
+    "mastery": [
+      "Nick|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "bonusWeapon": "+1",
+    "entries": [
+      "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.",
+      "When you hit a {@status Concentration|XPHB|Concentrating} creature with an attack roll using this weapon and deal damage, the creature has {@variantrule Disadvantage|XPHB} on the saving throw it makes to maintain {@status Concentration|XPHB}."
+    ]
+  },
+  {
+    "name": "Mage's Manacle",
+    "source": "AU",
+    "page": 120,
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "As a {@action Magic|XPHB} action while wearing this bracelet, you can target a Large or smaller creature within 5 feet of yourself that has the {@condition Grappled|XPHB} or {@condition Incapacitated|XPHB} condition. The target must succeed on a {@dc 15} Dexterity saving throw or become magically bound to you by a spectral chain and manacle that spring from the bracelet.",
+      "While bound in this way, the creature has the {@condition Restrained|XPHB} condition. When you move, the creature moves with you.",
+      "A creature remains bound for 8 hours or until you release it (no action required). If the manacle takes damage from a {@spell Disintegrate|XPHB} spell, it is destroyed; nothing else can break or harm it. Once the manacle has bound a creature, it can't be used again this way until the next dawn."
+    ]
+  },
+  {
+    "name": "Magewright's Gloves",
+    "source": "AU",
+    "page": 120,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "While you wear these gloves, you work as efficiently as two characters when determining how much time it takes to craft nonmagical items using any of the following tools: {@item Alchemist's Supplies|XPHB}, {@item Brewer's Supplies|XPHB}, {@item Calligrapher's Supplies|XPHB}, {@item Cartographer's Tools|XPHB}, {@item Glassblower's Tools|XPHB}, or {@item Jeweler's Tools|XPHB}."
+    ]
+  },
+  {
+    "name": "Many Keyholes Dagger",
+    "source": "AU",
+    "page": 128,
+    "_copy": {
+      "name": "Ten Keyholes Dagger",
+      "source": "AU",
+      "_mod": {
+        "property": {
+          "mode": "appendIfNotExistsArr",
+          "items": "Evo|AU"
+        },
+        "entries": {
+          "mode": "appendArr",
+          "items": {
+            "type": "entries",
+            "name": "Many",
+            "entries": [
+              "Overlapping ornamental keyholes adorn the weapon's hilt in a dizzying pattern. Your bonus to attack rolls and damage rolls made with this magic weapon increases to +3. When you transform the weapon, you can now also transform it into a {@item Battleaxe|XPHB}, {@item Longsword|XPHB}, {@item Rapier|XPHB}, {@item Scimitar|XPHB}, or {@item Warhammer|XPHB}.",
+              "Additionally, when you miss with an attack roll using this weapon, you can reroll the attack, potentially turning the miss into a hit. You must use the second roll. Once used, this property can't be used again until the next dawn."
+            ]
+          }
+        }
+      }
+    },
+    "rarity": "very rare",
+    "bonusWeapon": "+3"
+  },
+  {
+    "name": "Martialist's Quarterstaff",
+    "source": "AU",
+    "page": 120,
+    "baseItem": "quarterstaff|xphb",
+    "type": "M|XPHB",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "Topple|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "recharge": "dawn",
+    "rechargeAmount": "{@dice 1d4}",
+    "charges": 4,
+    "staff": true,
+    "entries": [
+      "This magic {@item Quarterstaff|XPHB} has 4 charges and regains {@dice 1d4} expended charges daily at dawn. It has the following additional properties.",
+      {
+        "type": "entries",
+        "name": "Searing Smite",
+        "entries": [
+          "You can expend 2 charges to cast the {@spell Searing Smite|XPHB} spell ({@dc 13})."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Throw",
+        "entries": [
+          "When you take the {@action Attack|XPHB} action, you can expend 1 charge to imbue the staff with magical velocity. Until the end of your next turn, the staff gains the {@itemProperty T|XPHB|Thrown} property, with a normal range of 20 feet and a long range of 60 feet, and immediately after you make a ranged attack with the weapon, it flies back to your hand."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Trip",
+        "entries": [
+          "When you make a melee attack with this weapon, you can expend 1 charge to give yourself {@variantrule Advantage|XPHB} on the attack roll. If the attack hits, the target makes a {@dc 13} Strength saving throw. On a failed save, the target has the {@condition Prone|XPHB} condition."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "2": [
+          "searing smite|xphb"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Namer's Needle",
+    "source": "AU",
+    "page": 120,
+    "baseItem": "dagger|xphb",
+    "type": "M|XPHB",
+    "rarity": "rare",
+    "weight": 1,
+    "weaponCategory": "simple",
+    "property": [
+      "F|XPHB",
+      "L|XPHB",
+      "T|XPHB"
+    ],
+    "mastery": [
+      "Nick|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "bonusWeapon": "+1",
+    "entries": [
+      "You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.",
+      {
+        "type": "entries",
+        "name": "Identify Target",
+        "entries": [
+          "When you hit a creature with an attack roll using this weapon, you can compel the target to reveal its identity. The target makes a {@dc 15} Wisdom saving throw. On a failed save, the target says or signs its name clearly and emphatically. On a successful save, the target is immune to this effect for the next 24 hours. If the creature can't speak or sign a language, it automatically succeeds on the save."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Named Target",
+        "entries": [
+          "When you hit a creature with an attack roll using this weapon, you can say or sign the target's name clearly and emphatically to turn the hit into a {@variantrule Critical Hit|XPHB}. Once this property is used, it can't be used again until the next dawn."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Necklace of the Beastly Familiar (Giant Octopus)",
+    "source": "AU",
+    "page": 120,
+    "rarity": "uncommon",
+    "reqAttune": "by a Spellcaster",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "This bejeweled necklace is set with azurite and comes with a matching charm that can be worn by your familiar.",
+      {
+        "type": "entries",
+        "name": "Familiar",
+        "entries": [
+          "While wearing this necklace, you can cast the {@spell Find Familiar|XPHB} spell from it. Once the necklace has been used to cast this spell, it can't be used to cast it again until the next dawn."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Beast Transformation",
+        "entries": [
+          "While your familiar is within 60 feet of you, you can take a {@action Magic|XPHB} action to activate the necklace. Your familiar shape-shifts into a {@creature Giant Octopus|XMM} for 10 minutes.",
+          "While your familiar is transformed, its stat block is replaced by the stat block of the Beast form, but it retains its alignment, personality, creature type, {@variantrule Hit Points|XPHB}, and {@variantrule Hit Point Dice|XPHB}. Equipment the familiar is wearing or carrying doesn't change size or shape to match the Beast form, and any equipment that the Beast form can't wear or carry falls to the ground.",
+          "Your familiar gains a number of {@variantrule Temporary Hit Points|XPHB} equal to the {@variantrule Hit Points|XPHB} of the Beast form. These {@variantrule Temporary Hit Points|XPHB} vanish if any remain when the transformation ends. The transformation ends early on your familiar if it has no {@variantrule Temporary Hit Points|XPHB} left."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "find familiar|xphb"
+        ]
+      }
+    },
+    "hasFluffImages": true
+  },
+  {
+    "name": "Necklace of the Beastly Familiar (Giant Scorpion)",
+    "source": "AU",
+    "page": 120,
+    "rarity": "rare",
+    "reqAttune": "by a Spellcaster",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "This bejeweled necklace is set with chrysoprase and comes with a matching charm that can be worn by your familiar.",
+      {
+        "type": "entries",
+        "name": "Familiar",
+        "entries": [
+          "While wearing this necklace, you can cast the {@spell Find Familiar|XPHB} spell from it. Once the necklace has been used to cast this spell, it can't be used to cast it again until the next dawn."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Beast Transformation",
+        "entries": [
+          "While your familiar is within 60 feet of you, you can take a {@action Magic|XPHB} action to activate the necklace. Your familiar shape-shifts into a {@creature Giant Scorpion|XMM} for 10 minutes.",
+          "While your familiar is transformed, its stat block is replaced by the stat block of the Beast form, but it retains its alignment, personality, creature type, {@variantrule Hit Points|XPHB}, and {@variantrule Hit Point Dice|XPHB}. Equipment the familiar is wearing or carrying doesn't change size or shape to match the Beast form, and any equipment that the Beast form can't wear or carry falls to the ground.",
+          "Your familiar gains a number of {@variantrule Temporary Hit Points|XPHB} equal to the {@variantrule Hit Points|XPHB} of the Beast form. These {@variantrule Temporary Hit Points|XPHB} vanish if any remain when the transformation ends. The transformation ends early on your familiar if it has no {@variantrule Temporary Hit Points|XPHB} left."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "find familiar|xphb"
+        ]
+      }
+    },
+    "hasFluffImages": true
+  },
+  {
+    "name": "Necklace of the Beastly Familiar (Hippopotamus)",
+    "source": "AU",
+    "page": 120,
+    "rarity": "rare",
+    "reqAttune": "by a Spellcaster",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "This bejeweled necklace is set with zircon and comes with a matching charm that can be worn by your familiar.",
+      {
+        "type": "entries",
+        "name": "Familiar",
+        "entries": [
+          "While wearing this necklace, you can cast the {@spell Find Familiar|XPHB} spell from it. Once the necklace has been used to cast this spell, it can't be used to cast it again until the next dawn."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Beast Transformation",
+        "entries": [
+          "While your familiar is within 60 feet of you, you can take a {@action Magic|XPHB} action to activate the necklace. Your familiar shape-shifts into a {@creature Hippopotamus|XMM} for 10 minutes.",
+          "While your familiar is transformed, its stat block is replaced by the stat block of the Beast form, but it retains its alignment, personality, creature type, {@variantrule Hit Points|XPHB}, and {@variantrule Hit Point Dice|XPHB}. Equipment the familiar is wearing or carrying doesn't change size or shape to match the Beast form, and any equipment that the Beast form can't wear or carry falls to the ground.",
+          "Your familiar gains a number of {@variantrule Temporary Hit Points|XPHB} equal to the {@variantrule Hit Points|XPHB} of the Beast form. These {@variantrule Temporary Hit Points|XPHB} vanish if any remain when the transformation ends. The transformation ends early on your familiar if it has no {@variantrule Temporary Hit Points|XPHB} left."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "find familiar|xphb"
+        ]
+      }
+    },
+    "hasFluffImages": true
+  },
+  {
+    "name": "Necklace of the Beastly Familiar (Mammoth)",
+    "source": "AU",
+    "page": 120,
+    "rarity": "very rare",
+    "reqAttune": "by a Spellcaster",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "This bejeweled necklace is set with topaz and comes with a matching charm that can be worn by your familiar.",
+      {
+        "type": "entries",
+        "name": "Familiar",
+        "entries": [
+          "While wearing this necklace, you can cast the {@spell Find Familiar|XPHB} spell from it. Once the necklace has been used to cast this spell, it can't be used to cast it again until the next dawn."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Beast Transformation",
+        "entries": [
+          "While your familiar is within 60 feet of you, you can take a {@action Magic|XPHB} action to activate the necklace. Your familiar shape-shifts into a {@creature Mammoth|XMM} for 10 minutes.",
+          "While your familiar is transformed, its stat block is replaced by the stat block of the Beast form, but it retains its alignment, personality, creature type, {@variantrule Hit Points|XPHB}, and {@variantrule Hit Point Dice|XPHB}. Equipment the familiar is wearing or carrying doesn't change size or shape to match the Beast form, and any equipment that the Beast form can't wear or carry falls to the ground.",
+          "Your familiar gains a number of {@variantrule Temporary Hit Points|XPHB} equal to the {@variantrule Hit Points|XPHB} of the Beast form. These {@variantrule Temporary Hit Points|XPHB} vanish if any remain when the transformation ends. The transformation ends early on your familiar if it has no {@variantrule Temporary Hit Points|XPHB} left."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "find familiar|xphb"
+        ]
+      }
+    },
+    "hasFluffImages": true
+  },
+  {
+    "name": "Necklace of the Beastly Familiar (Tyrannosaurus Rex)",
+    "source": "AU",
+    "page": 120,
+    "rarity": "legendary",
+    "reqAttune": "by a Spellcaster",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "This bejeweled necklace is set with fire opal and comes with a matching charm that can be worn by your familiar.",
+      {
+        "type": "entries",
+        "name": "Familiar",
+        "entries": [
+          "While wearing this necklace, you can cast the {@spell Find Familiar|XPHB} spell from it. Once the necklace has been used to cast this spell, it can't be used to cast it again until the next dawn."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Beast Transformation",
+        "entries": [
+          "While your familiar is within 60 feet of you, you can take a {@action Magic|XPHB} action to activate the necklace. Your familiar shape-shifts into a {@creature Tyrannosaurus Rex|XMM} for 10 minutes.",
+          "While your familiar is transformed, its stat block is replaced by the stat block of the Beast form, but it retains its alignment, personality, creature type, {@variantrule Hit Points|XPHB}, and {@variantrule Hit Point Dice|XPHB}. Equipment the familiar is wearing or carrying doesn't change size or shape to match the Beast form, and any equipment that the Beast form can't wear or carry falls to the ground.",
+          "Your familiar gains a number of {@variantrule Temporary Hit Points|XPHB} equal to the {@variantrule Hit Points|XPHB} of the Beast form. These {@variantrule Temporary Hit Points|XPHB} vanish if any remain when the transformation ends. The transformation ends early on your familiar if it has no {@variantrule Temporary Hit Points|XPHB} left."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "find familiar|xphb"
+        ]
+      }
+    },
+    "hasFluffImages": true
+  },
+  {
+    "name": "Ninth Quill Trinket",
+    "source": "AU",
+    "page": 102,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "entries": [
+      {
+        "type": "table",
+        "caption": "Ninth Quill Trinkets",
+        "page": 102,
+        "colLabels": [
+          "{@dice 1d6}",
+          "Trinket"
+        ],
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "rows": [
+          [
+            "1",
+            "A long fake beard"
+          ],
+          [
+            "2",
+            "A fancy pen that never runs out of ink"
+          ],
+          [
+            "3",
+            "A bag of broken teeth"
+          ],
+          [
+            "4",
+            "A scrap of paper with several crossed-out passwords and the word \"caiman\" circled"
+          ],
+          [
+            "5",
+            "Two identical playing cards with unfamiliar suits"
+          ],
+          [
+            "6",
+            "A featureless mask with small eyeholes"
+          ]
+        ]
+      }
+    ],
+    "miscTags": [
+      "TT"
+    ]
+  },
+  {
+    "name": "Ominous Staff of Skulls",
+    "source": "AU",
+    "page": 128,
+    "baseItem": "quarterstaff|xphb",
+    "type": "M|XPHB",
+    "rarity": "uncommon",
+    "reqAttune": "by a Spellcaster",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V|XPHB",
+      "Evo|AU"
+    ],
+    "mastery": [
+      "Topple|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "staff": true,
+    "entries": [
+      {
+        "type": "entries",
+        "name": "Ominous",
+        "entries": [
+          "A skull adorns the top of the staff.",
+          "While you hold the staff, you can cast {@spell Chill Touch|XPHB} from it, using your spell attack bonus. Additionally, you have {@variantrule Advantage|XPHB} on Charisma ({@skill Intimidation|XPHB}) checks made while holding the staff, and the staff's eye sockets glow a disquieting green, shedding {@variantrule Dim Light|XPHB} in a 5-foot radius."
+        ]
+      }
+    ],
+    "light": [
+      {
+        "dim": 5
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "chill touch|xphb"
+      ]
+    },
+    "hasFluffImages": true
+  },
+  {
+    "name": "Orb of Divination Detection",
+    "source": "AU",
+    "page": 121,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "focus": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard"
+    ],
+    "entries": [
+      "This glass orb is a useful defense against meddlesome mages and magic-wielding spies.",
+      {
+        "type": "entries",
+        "name": "Detect Divination",
+        "entries": [
+          "When you are targeted by a spell from the Divination school, the orb glows bright green for the spell's duration."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spellcasting Focus",
+        "entries": [
+          "This orb can be used as an Arcane Focus."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Orb of Sorcery",
+    "source": "AU",
+    "page": 121,
+    "rarity": "uncommon",
+    "reqAttune": "by a Sorcerer",
+    "reqAttuneTags": [
+      {
+        "class": "sorcerer"
+      }
+    ],
+    "wondrous": true,
+    "focus": [
+      "Sorcerer"
+    ],
+    "entries": [
+      "Ribbons of varicolored light swirl inside this magical glass orb.",
+      {
+        "type": "entries",
+        "name": "Sorcerous Reservoir",
+        "entries": [
+          "While holding this orb, you can take a {@action Magic|XPHB} action to regain up to 2 expended Sorcery Points. Once this property is used, it can't be used again until the next dawn."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Spellcasting Focus",
+        "entries": [
+          "You can use the orb as a {@variantrule Spellcasting Focus|XPHB} for your Sorcerer spells."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phantasmic Circus Trinket",
+    "source": "AU",
+    "page": 106,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "entries": [
+      {
+        "type": "table",
+        "caption": "Phantasmic Circus Trinkets",
+        "page": 106,
+        "colLabels": [
+          "{@dice 1d6}",
+          "Trinket"
+        ],
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "rows": [
+          [
+            "1",
+            "An advertisement for a past circus performance, featuring your likeness"
+          ],
+          [
+            "2",
+            "A small tin of white greasepaint"
+          ],
+          [
+            "3",
+            "A green wire stem that produces an illusory flower for 1 minute when brandished dramatically"
+          ],
+          [
+            "4",
+            "A fine silk ribbon, two inches wide and nine feet long"
+          ],
+          [
+            "5",
+            "Bronze finger cymbals"
+          ],
+          [
+            "6",
+            "A battered top hat"
+          ]
+        ]
+      }
+    ],
+    "miscTags": [
+      "TT"
+    ]
+  },
+  {
+    "name": "Potion of Dragon's Breath",
+    "source": "AU",
+    "page": 121,
+    "type": "P|XPHB",
+    "rarity": "uncommon",
+    "entries": [
+      "When you drink this potion, you gain the effect of the {@spell Dragon's Breath|XPHB} spell for 1 minute (save {@dc 13}, no {@status Concentration|XPHB} required). The damage type associated with that spell is determined by the color of the potion when the potion was created, as shown in the table below.",
+      "Light catches off the glittery liquid inside this potion, which is made from the pulverized scale of a chromatic dragon.",
+      {
+        "type": "table",
+        "colLabels": [
+          "Color",
+          "Damage Type"
+        ],
+        "colStyles": [
+          "col-6 text-center",
+          "col-6 text-center"
+        ],
+        "rows": [
+          [
+            "Black",
+            "Acid"
+          ],
+          [
+            "Blue",
+            "Lightning"
+          ],
+          [
+            "Green",
+            "Poison"
+          ],
+          [
+            "Red",
+            "Fire"
+          ],
+          [
+            "White",
+            "Cold"
+          ]
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "dragon's breath|xphb"
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  },
+  {
+    "name": "Potion of Tirelessness",
+    "source": "AU",
+    "page": 121,
+    "type": "P|XPHB",
+    "rarity": "uncommon",
+    "entries": [
+      "After you drink this potion, you don't need to sleep, and magic can't put you to sleep. This effect lasts 24 hours. For the duration, you can finish a {@variantrule Long Rest|XPHB} in 4 hours if you spend those hours in a state of quiet focus, during which you retain consciousness.",
+      "This pale red potion is as thick as molasses, yet it slides out of the bottle as readily as oil."
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  },
+  {
+    "name": "Prismatic Rune",
+    "source": "AU",
+    "page": 122,
+    "rarity": "rare",
+    "reqAttune": "by a Spellcaster",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "wondrous": true,
+    "recharge": "dawn",
+    "rechargeAmount": "{@dice 1d6}",
+    "charges": 6,
+    "entries": [
+      "A magical rune is etched on this small stone made of multicolored quartz. When you finish a {@variantrule Long Rest|XPHB}, choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. The rune is imbued with the chosen damage type until you finish another {@variantrule Long Rest|XPHB}.",
+      {
+        "type": "entries",
+        "name": "Charges",
+        "entries": [
+          "The rune has 6 charges and regains {@dice 1d6} expended charges daily at dawn. When you cast a spell that deals damage, you can expend 1 charge to change the spell's damage type to the damage type chosen for the rune."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Psionic Rod of the Honed Mind",
+    "source": "AU",
+    "page": 133,
+    "_copy": {
+      "name": "Vigilant Rod of the Honed Mind",
+      "source": "AU",
+      "_mod": {
+        "property": {
+          "mode": "appendIfNotExistsArr",
+          "items": "Evo|AU"
+        },
+        "entries": {
+          "mode": "appendArr",
+          "items": {
+            "type": "entries",
+            "name": "Psionic",
+            "entries": [
+              "While exploring clues the Warlock deciphered from the strange tome, the characters acquire psionically charged crystals from the Underdark. The crystals bear the same symbols the rod has. The DM decides the rod evolves to become Very Rare, gaining the {@table Magic Item Property Tables; Very Rare Magic Item Properties|AU|Psionic} property."
+            ]
+          }
+        }
+      }
+    },
+    "rarity": "very rare"
+  },
+  {
+    "name": "Pulverizing Staff of Skulls",
+    "source": "AU",
+    "page": 128,
+    "_copy": {
+      "name": "Chattering Staff of Skulls",
+      "source": "AU",
+      "_mod": {
+        "property": {
+          "mode": "appendIfNotExistsArr",
+          "items": "Evo|AU"
+        },
+        "entries": {
+          "mode": "appendArr",
+          "items": {
+            "type": "entries",
+            "name": "Pulverizing",
+            "entries": [
+              "The entire staff is made of fused skulls.",
+              "While you hold the staff, you can take a {@action Magic|XPHB} action to point the staff at a Humanoid you can see. That creature makes a {@dc 17} Constitution saving throw. On a failed save, the creature takes {@damage 10d8} Necrotic damage and has the {@condition Prone|XPHB} condition as it's crushed from the inside. On a successful save, the creature takes half as much damage only. Once used, this property can't be used again until the next dawn."
+            ]
+          }
+        }
+      }
+    },
+    "rarity": "very rare",
+    "hasFluffImages": true
+  },
+  {
+    "name": "Queen Ehlissa's Marvelous Nightingale",
+    "source": "AU",
+    "page": 122,
+    "rarity": "artifact",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "dawn",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 6,
+    "entries": [
+      "Queen Ehlissa's Marvelous Nightingale is named for its first owner, a queen from the eastern Flanaess in the world of Greyhawk. Its origin is unknown, but one legend holds that it was made to console the queen when a beloved pet songbird met its unfortunate end.",
+      "This mechanical songbird has crystal eyes, golden feathers, and a small windup key on its back. As a {@action Magic|XPHB} action, you can cause the bird to spring to life for 10 minutes, during which time it sings a beautiful melody audible within 300 feet, or you can revert the bird to its mechanical form. When the nightingale becomes mechanical again, it can't come to life again for 1 hour.",
+      {
+        "type": "entries",
+        "name": "Aura of Truth",
+        "entries": [
+          "While the nightingale sings, the effect of a {@spell Zone of Truth|XPHB} spell (save {@dc 18}) fills a 15-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the nightingale. While attuned to the nightingale, you know which creatures succeed on or fail the saving throw against this effect."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Counterspell",
+        "entries": [
+          "While the nightingale sings, you can take a {@variantrule Reaction|XPHB} to cast {@spell Counterspell|XPHB} (save {@dc 18}) in response to that spell's trigger. Once this property is used, it can't be used again until the next dawn."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Random Properties",
+        "entries": [
+          "The Artifact has the following random properties (see the \"Artifacts\" section in the Dungeon Master's Guide):",
+          {
+            "type": "list",
+            "items": [
+              "2 {@table Artifact Properties; Minor Beneficial Properties|XDMG|minor beneficial} properties",
+              "1 {@table Artifact Properties; Major Beneficial Properties|XDMG|major beneficial} property",
+              "1 {@table Artifact Properties; Minor Detrimental Properties|XDMG|minor detrimental} property"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Destroying the Nightingale",
+        "entries": [
+          "The nightingale is destroyed if it is released into a whirlwind in Limbo."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Ensemble Casting",
+        "entries": [
+          "The nightingale has 6 charges and regains {@dice 1d6 + 1} expended charges daily at dawn. As a {@variantrule Bonus Action|XPHB} while the nightingale is singing and within 60 feet of you, you can expend charges to cast one of the spells on the table below from the nightingale (save {@dc 18}). The table shows the number of charges you must expend to cast the spell."
+        ]
+      },
+      {
+        "type": "table",
+        "colLabels": [
+          "Spell",
+          "Charge Cost"
+        ],
+        "colStyles": [
+          "col-10",
+          "col-2 text-center"
+        ],
+        "rows": [
+          [
+            "{@spell Calm Emotions|XPHB}",
+            "1"
+          ],
+          [
+            "{@spell Compulsion|XPHB}",
+            "3"
+          ],
+          [
+            "{@spell Delayed Blast Fireball|XPHB}",
+            "6"
+          ],
+          [
+            "{@spell Detect Evil and Good|XPHB}",
+            "0"
+          ],
+          [
+            "{@spell Greater Restoration|XPHB}",
+            "4"
+          ],
+          [
+            "{@spell Prismatic Spray|XPHB}",
+            "6"
+          ],
+          [
+            "{@spell Slow|XPHB}",
+            "2"
+          ],
+          [
+            "{@spell Speak with Animals|XPHB}",
+            "0"
+          ]
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "0": [
+          "detect evil and good|xphb",
+          "speak with animals|xphb"
+        ],
+        "1": [
+          "calm emotions|xphb"
+        ],
+        "2": [
+          "slow|xphb"
+        ],
+        "3": [
+          "compulsion|xphb"
+        ],
+        "4": [
+          "greater restoration|xphb"
+        ],
+        "6": [
+          "delayed blast fireball|xphb",
+          "prismatic spray|xphb"
+        ]
+      },
+      "daily": {
+        "1e": [
+          "counterspell|xphb"
+        ]
+      },
+      "other": [
+        "zone of truth|xphb"
+      ]
+    }
+  },
+  {
+    "name": "Ring of Dedicated Focus",
+    "source": "AU",
+    "page": 122,
+    "type": "RG|XDMG",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "entries": [
+      "The magical spike on the side of this ring allows you to sharpen your focus at a moment's notice. When you fail a Constitution saving throw to maintain {@status Concentration|XPHB}, you can roll up to two of your unexpended Hit Dice and add the total rolled to your save, potentially turning the failure into a success. The rolled Hit Dice are then expended."
+    ]
+  },
+  {
+    "name": "Scholar's Anchoring Bangle",
+    "source": "AU",
+    "page": 122,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "This heavy magical bracelet inures your mind against potential distractions. While wearing this bracelet, you gain the following benefits.",
+      {
+        "type": "entries",
+        "name": "Deep Knowledge",
+        "entries": [
+          "When you take the {@action Study|XPHB} action and make an Intelligence check using a skill in which you have proficiency, you can treat a {@dice d20} roll of 9 or lower as a 10."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Single-Minded Focus",
+        "entries": [
+          "When you fail a Constitution saving throw to maintain {@status Concentration|XPHB}, you can take a {@variantrule Reaction|XPHB} to succeed instead. Once you use this property, it can't be used again until the next dawn."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Secret Keeper's Circlet",
+    "source": "AU",
+    "page": 122,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "This circlet allows the wearer to wipe from their memory any knowledge of a specific deed or time in their life, making it useful for those who fear mages plumbing their minds with magic.",
+      "While wearing this circlet, you can take a {@action Magic|XPHB} action to specify a trigger such as \"after I leave this temple\" or \"when I cast the {@spell Animate Dead|XPHB} spell.\" For the next 24 hours, if that trigger occurs, the circlet erases your memories of everything from the time you chose the trigger until the trigger occurred. No magic short of a {@spell Wish|XPHB} spell can restore your memory of this time. Once you use this property, you can't use it again until the next dawn."
+    ],
+    "hasFluffImages": true
+  },
+  {
+    "name": "Seers of Sea and Sky Trinket",
+    "source": "AU",
+    "page": 109,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "entries": [
+      {
+        "type": "table",
+        "caption": "Seers of Sea and Sky Trinkets",
+        "page": 109,
+        "colLabels": [
+          "{@dice 1d6}",
+          "Trinket"
+        ],
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "rows": [
+          [
+            "1",
+            "A piece of driftwood with natural whorls and gnarls that spell out your name"
+          ],
+          [
+            "2",
+            "A windsock"
+          ],
+          [
+            "3",
+            "A tide chart for an unfamiliar seashore"
+          ],
+          [
+            "4",
+            "A roll of seaweed with cryptic symbols written on it in octopus ink"
+          ],
+          [
+            "5",
+            "A small cog from a lighthouse's turning mechanism"
+          ],
+          [
+            "6",
+            "Four oddly shaped white feathers that fit together to form a perfect triangle"
+          ]
+        ]
+      }
+    ],
+    "miscTags": [
+      "TT"
+    ]
+  },
+  {
+    "name": "Sheltering Hands Trinket",
+    "source": "AU",
+    "page": 113,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "entries": [
+      {
+        "type": "table",
+        "caption": "Sheltering Hands Trinkets",
+        "page": 113,
+        "colLabels": [
+          "{@dice 1d6}",
+          "Trinket"
+        ],
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "rows": [
+          [
+            "1",
+            "A tin of lotion to ease rashes"
+          ],
+          [
+            "2",
+            "A religious tract for an unfamiliar deity of healing"
+          ],
+          [
+            "3",
+            "A child's drawing of two parents smiling"
+          ],
+          [
+            "4",
+            "A utensil with a fork on one end and spoon on the other"
+          ],
+          [
+            "5",
+            "A pouch of sweet spices"
+          ],
+          [
+            "6",
+            "A windup toy soldier holding a large shield"
+          ]
+        ]
+      }
+    ],
+    "miscTags": [
+      "TT"
+    ]
+  },
+  {
+    "name": "Somniferous Blossom Rod",
+    "source": "AU",
+    "page": 127,
+    "_copy": {
+      "name": "Flowering Blossom Rod",
+      "source": "AU",
+      "_mod": {
+        "property": {
+          "mode": "appendIfNotExistsArr",
+          "items": "Evo|AU"
+        },
+        "entries": {
+          "mode": "appendArr",
+          "items": {
+            "type": "entries",
+            "name": "Somniferous",
+            "entries": [
+              "Robust bursts of flowers grow along the rod's length.",
+              "While you hold the rod, you can take a {@action Magic|XPHB} action to expel a puff of sleep-inducing pollen in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from you. Creatures of your choice in the {@variantrule Emanation [Area of Effect]|XPHB|Emanation} must succeed on a {@dc 17} Constitution saving throw or have the {@condition Unconscious|XPHB} condition for 1 hour. Creatures that don't sleep, such as elves, or that have {@variantrule Immunity|XPHB} to the {@condition Exhaustion|XPHB} condition automatically succeed on the save. The effect ends on a target if it takes damage or a creature within 5 feet of it takes an action to shake it awake. Once the rod has produced this effect, it can't do so again until the next dawn."
+            ]
+          }
+        }
+      }
+    },
+    "rarity": "very rare",
+    "hasFluffImages": true
+  },
+  {
+    "name": "Spell Component Ring",
+    "source": "AU",
+    "page": 123,
+    "type": "RG|XDMG",
+    "rarity": "common",
+    "entries": [
+      "This steel ring has a discreet chamber lined with a mystical inscription. As a {@action Magic|XPHB} action, choose one spell you have prepared that requires a Material component; the required Material component must neither have a cost specified nor be consumed by the spell. You store that spell's Material component in the ring's chamber.",
+      "Whenever you cast the chosen spell, you don't need to have a hand free to access its Material component, provided you are wearing the ring. The ring can hold the Material component for one spell at a time."
+    ]
+  },
+  {
+    "name": "Spell Duelist's Trophy",
+    "source": "AU",
+    "page": 123,
+    "rarity": "rare",
+    "reqAttune": "by a Spellcaster",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "This withered hand or talon is attached to a leather cord that can be worn like a necklace or bracelet. You gain the following benefits while wearing the trophy.",
+      {
+        "type": "entries",
+        "name": "Dispelling Touch",
+        "entries": [
+          "When you hit a creature with a melee spell attack, you can activate the trophy to cast the {@spell Dispel Magic|XPHB} spell as part of that attack, targeting the hit creature. Once this property has been used, it can't be used again until the next dawn."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Helping Hand",
+        "entries": [
+          "When you cast a spell using a spell slot, you can cast it without any Somatic components."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Mage Hand",
+        "entries": [
+          "You can cast the {@spell Mage Hand|XPHB} cantrip from the trophy."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "mage hand|xphb"
+      ],
+      "daily": {
+        "1e": [
+          "dispel magic|xphb"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Spell-Slinger's Puppet",
+    "source": "AU",
+    "page": 123,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "As a {@variantrule Bonus Action|XPHB} while holding this ventriloquist's doll, you can pull the cord on the doll's back to cause the doll to levitate to an unoccupied space you can see within 30 feet of yourself and hover there. While the doll hovers, you can take a {@variantrule Bonus Action|XPHB} to cause the doll to move up to 30 feet to another unoccupied space you can see within 30 feet of yourself. The doll hovers for 1 minute or until you end the effect as a {@variantrule Bonus Action|XPHB}.",
+      "While the doll is within 30 feet of you, you can speak using the doll's mouth rather than your own. This allows you to, for instance, cast a spell with a Verbal component even if you can't speak."
+    ]
+  },
+  {
+    "name": "Staff of the Lost",
+    "source": "AU",
+    "page": 123,
+    "type": "M|XPHB",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "curse": true,
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "Topple|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusWeapon": "+1",
+    "charges": 3,
+    "staff": true,
+    "entries": [
+      "This staff can be wielded as a magic {@item Quarterstaff|XPHB} that grants a +1 bonus to attack rolls and damage rolls made with it.",
+      "The staff has 3 charges. While holding the staff, you can expend 1 charge to cast either {@spell Maze|XPHB} (save {@dc 18}) or {@spell Teleport|XPHB} from it. When the staff has no more charges remaining, it loses its magic and becomes a nonmagical {@item Quarterstaff|XPHB}.",
+      {
+        "type": "entries",
+        "name": "Curse",
+        "entries": [
+          "This staff is cursed. Becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the staff, keeping it on your person at all times.",
+          "While attuned to this staff, you never know which way is north, and you have {@variantrule Disadvantage|XPHB} on Wisdom ({@skill Survival|XPHB}) checks made to navigate. Additionally, whenever you expend a charge from the staff, roll {@dice 1d20}. On a 1, {@dice 1d4} {@creature Minotaur of Baphomet|XMM|minotaurs of Baphomet} materialize, each appearing in an unoccupied space within 30 feet of you. The minotaurs begin combat with you immediately."
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "maze|xphb",
+          "teleport|xphb"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Sweeping Broom",
+    "source": "AU",
+    "page": 124,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "As a {@action Magic|XPHB} action, you can use this unassuming broom's command word, choosing a point you can see on the ground within 60 feet of yourself. The broom animates and sweeps dust and detritus from the ground in a 20-foot square centered on the chosen point. It sweeps that area until you take another {@action Magic|XPHB} action to deactivate it."
+    ]
+  },
+  {
+    "name": "Tarnished Idol of Good Fortunes",
+    "source": "AU",
+    "page": 127,
+    "_copy": {
+      "name": "Blemished Idol of Good Fortunes",
+      "source": "AU",
+      "_mod": {
+        "property": {
+          "mode": "appendIfNotExistsArr",
+          "items": "Evo|AU"
+        },
+        "entries": {
+          "mode": "appendArr",
+          "items": {
+            "type": "entries",
+            "name": "Tarnished",
+            "entries": [
+              "The idol is made of gold, with a patina of dust settled into its crevices.",
+              "While attuned to the idol, you gain a +1 bonus to your {@variantrule Armor Class|XPHB}. Additionally, while holding the idol, you can take a {@action Magic|XPHB} action to touch a nonmagical trade bar or gemstone. The item is then transformed into coinage equivalent to its value. For example, if you take a {@action Magic|XPHB} action to touch a 5-pound silver bar while holding the idol, the bar is transformed into 25 GP worth of coins."
+            ]
+          }
+        }
+      }
+    },
+    "rarity": "rare",
+    "bonusAc": "+1"
+  },
+  {
+    "name": "Ten Keyholes Dagger",
+    "source": "AU",
+    "page": 128,
+    "_copy": {
+      "name": "Three Keyholes Dagger",
+      "source": "AU",
+      "_mod": {
+        "property": {
+          "mode": "appendIfNotExistsArr",
+          "items": "Evo|AU"
+        },
+        "entries": {
+          "mode": "appendArr",
+          "items": {
+            "type": "entries",
+            "name": "Ten",
+            "entries": [
+              "Ten ornamental keyholes adorn the weapon's hilt. Your bonus to attack rolls and damage rolls made with this magic weapon increases to +2. Additionally, when you transform the weapon, you can now transform it into any Simple Melee weapon."
+            ]
+          }
+        }
+      }
+    },
+    "rarity": "rare",
+    "bonusWeapon": "+2"
+  },
+  {
+    "name": "Thespian's Playbill",
+    "source": "AU",
+    "page": 124,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "While holding this magical theater program, whenever you take the {@action Study|XPHB} action and make an Intelligence check, you gain a bonus to the check equal to your Charisma modifier (minimum of +1)."
+    ]
+  },
+  {
+    "name": "Thief's Thimble",
+    "source": "AU",
+    "page": 124,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "This magic thimble aids thieves in foiling traps. While wearing this thimble, if you trigger a trap and take damage, the thimble takes the damage instead.",
+      "The thimble has 30 {@variantrule Hit Points|XPHB}. If the thimble is reduced to 0 {@variantrule Hit Points|XPHB}, it breaks, and you take any remaining damage."
+    ]
+  },
+  {
+    "name": "Three Keyholes Dagger",
+    "source": "AU",
+    "page": 128,
+    "baseItem": "dagger|xphb",
+    "type": "M|XPHB",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "weight": 1,
+    "weaponCategory": "simple",
+    "property": [
+      "F|XPHB",
+      "L|XPHB",
+      "T|XPHB",
+      "Evo|AU"
+    ],
+    "mastery": [
+      "Nick|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "bonusWeapon": "+1",
+    "entries": [
+      {
+        "type": "entries",
+        "name": "Three",
+        "entries": [
+          "Three ornamental keyholes adorn the weapon's hilt.",
+          "You have a +1 bonus to attack rolls and damage rolls made with this magic weapon. When you take the {@action Attack|XPHB} action, you can transform this weapon into a {@item Handaxe|XPHB} or {@item Mace|XPHB}. It remains transformed in this way until the start of your next turn, at which point it reverts back to its {@item Dagger|XPHB} form. Regardless of the weapon's form, you can use your choice of your Strength or Dexterity modifier for the attack and damage rolls; you must use the same modifier for both rolls."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tranquil Rod of the Honed Mind",
+    "source": "AU",
+    "page": 133,
+    "_copy": {
+      "name": "Psionic Rod of the Honed Mind",
+      "source": "AU",
+      "_mod": {
+        "property": {
+          "mode": "appendIfNotExistsArr",
+          "items": "Evo|AU"
+        },
+        "entries": {
+          "mode": "appendArr",
+          "items": {
+            "type": "entries",
+            "name": "Tranquil",
+            "entries": [
+              "Thanks to the Warlock's quick thinking, the characters defeat a band of cultists seeking to destroy anything connected to psionic magic. To reward the Warlock, the DM evolves the rod into its final form, making it Legendary and granting it the {@table Magic Item Property Tables; Legendary Magic Item Properties|AU|Tranquil} property."
+            ]
+          }
+        }
+      }
+    },
+    "rarity": "legendary"
+  },
+  {
+    "name": "Traveler's Pearl",
+    "source": "AU",
+    "page": 124,
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "By using a command word while holding this pearl, you can cast the {@spell Teleport|XPHB} spell from it. Once this property is used, it can't be used again until the next dawn."
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "teleport|xphb"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Universal Pantograph",
+    "source": "AU",
+    "page": 124,
+    "rarity": "artifact",
+    "wondrous": true,
+    "entries": [
+      "This cubical box measures 2 feet on each side. It appears to be made of oak and bound in silver, and its surface is engraved with motifs of marionettes and laughing children.",
+      "When a nonmagical item is placed in the box and the lid is closed, a perfect duplicate of the item appears next to the box.",
+      {
+        "type": "entries",
+        "name": "Clone",
+        "entries": [
+          "As a {@action Magic|XPHB} action, you can cause the pantograph to grow large enough for a Medium creature to crouch within. You can revert the pantograph to its normal size as a {@action Magic|XPHB} action, harmlessly shunting anything that can't fit inside to the nearest unoccupied space.",
+          "When a creature is inside the pantograph, you can close the pantograph's lid and sprinkle the pantograph with diamond dust worth at least 100 GP. If you do, the diamond dust is consumed, and you cast the {@spell Clone|XPHB} spell, targeting the creature inside the pantograph. After the spell's casting time is finished, the creature is harmlessly shunted from the pantograph, and the pantograph's lid then can't be opened for 120 days, during which time the duplicate from the spell grows within. Once the clone is finished forming, it is harmlessly shunted from the pantograph, and the pantograph returns to its original size. A clone created by the pantograph doesn't need to be contained within a vessel and endures indefinitely while inert."
+        ]
+      },
+      {
+        "type": "entries",
+        "name": "Destroying the Pantograph",
+        "entries": [
+          "If the pantograph doesn't contain a clone, it is destroyed after being submerged in a bog in the Feywild for 999 years."
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "clone|xphb"
+    ],
+    "hasFluffImages": true
+  },
+  {
+    "name": "Vigilant Rod of the Honed Mind",
+    "source": "AU",
+    "page": 133,
+    "_copy": {
+      "name": "+1 Rod of the Pact Keeper",
+      "source": "XDMG",
+      "_mod": {
+        "property": {
+          "mode": "appendIfNotExistsArr",
+          "items": "Evo|AU"
+        },
+        "entries": {
+          "mode": "appendArr",
+          "items": {
+            "type": "entries",
+            "name": "Vigilant",
+            "entries": [
+              "After discovering a strange tome full of symbols that match those on the rod, the Warlock feels the approval of the entity that fuels their magic. The DM decides the rod evolves and becomes Rare, gaining the {@table Magic Item Property Tables; Rare Magic Item Properties|AU|Vigilant} property."
+            ]
+          }
+        }
+      }
+    },
+    "rarity": "rare"
+  },
+  {
+    "name": "Wand of Freshness",
+    "source": "AU",
+    "page": 125,
+    "type": "WD|XDMG",
+    "rarity": "uncommon",
+    "recharge": "dawn",
+    "rechargeAmount": "{@dice 1d4 + 1}",
+    "charges": 4,
+    "entries": [
+      "This wand has 4 charges and regains {@dice 1d4 + 1} expended charges daily at dawn. While holding it, you can expend 1 charge to cast the {@spell Purify Food and Drink|XPHB} spell from it."
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "purify food and drink|xphb"
+        ]
+      }
+    },
+    "hasFluffImages": true
+  },
+  {
+    "name": "Wand of Slumber",
+    "source": "AU",
+    "page": 125,
+    "type": "WD|XDMG",
+    "rarity": "rare",
+    "reqAttune": true,
+    "recharge": "dawn",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 7,
+    "entries": [
+      "This wand has 7 charges. While holding it, you can cast one of the spells on the following table from it. The table indicates how many charges you must expend to cast the spell.",
+      {
+        "type": "entries",
+        "name": "Regaining Charges",
+        "entries": [
+          "The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll {@dice 1d20}. On a 1, the wand crumbles into sand and is destroyed."
+        ]
+      },
+      {
+        "type": "table",
+        "colLabels": [
+          "Spell",
+          "Charge Cost"
+        ],
+        "colStyles": [
+          "col-10",
+          "col-2 text-center"
+        ],
+        "rows": [
+          [
+            "{@spell Catnap|AU}",
+            "3"
+          ],
+          [
+            "{@spell Sleep|XPHB} (save {@dc 15})",
+            "1"
+          ]
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "sleep|xphb"
+        ],
+        "3": [
+          "catnap|au"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Wand of Teeth",
+    "source": "AU",
+    "page": 125,
+    "type": "WD|XDMG",
+    "rarity": "rare",
+    "recharge": "dawn",
+    "rechargeAmount": "{@dice 1d10}",
+    "charges": 10,
+    "entries": [
+      "This wand has 10 charges. While holding it, you can take a {@action Magic|XPHB} action to expend up to 3 charges to spray a wave of sharp, spectral teeth in the direction you point it. Each creature in a 30-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} makes a {@dc 15} Dexterity saving throw. Roll a number of d8s equal to the number of charges expended. On a failed save, a creature takes Piercing damage equal to the total rolled and has the {@condition Poisoned|XPHB} condition until the start of your next turn; on a successful save, a creature takes half as much damage only.",
+      {
+        "type": "entries",
+        "name": "Regaining Charges",
+        "entries": [
+          "The wand regains {@dice 1d10} expended charges daily at dawn. If you expend the wand's last charge, roll {@dice 1d20}. On a 1, the wand explodes into harmless splinters and is destroyed."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Workshop Wrecker",
+    "source": "AU",
+    "page": 125,
+    "rarity": "very rare",
+    "wondrous": true,
+    "entries": [
+      "When this 3-inch-diameter metal ball is activated as a {@action Magic|XPHB} action, it moves at a rapid speed, bouncing off walls and defying any attempts to capture it. The ball remains active for 1 minute or until you deactivate it by using a command word while within 30 feet of it (no action required). Once the ball is used, it can't be used again until the next dawn.",
+      "When you activate the ball and at the beginning of each of your turns while the ball is active, each creature in the area makes a Dexterity saving throw, taking Bludgeoning damage on a failed save. The save DC and amount of damage dealt depend on the approximate size of the area in which the ball is active, as shown on the following table.",
+      "A nonmagical object that isn't being worn or carried also takes the damage if it is in the area. In confined areas larger than a 100-foot {@variantrule Cube [Area of Effect]|XPHB|Cube}, the amount of damage caused by the ball is negligible. If the ball is activated in an unconfined area, it flies off in a random direction at a rate of 300 feet per round.",
+      {
+        "type": "table",
+        "colLabels": [
+          "Area",
+          "Save DC",
+          "Bludgeoning Damage"
+        ],
+        "colStyles": [
+          "col-4",
+          "col-4 text-center",
+          "col-4 text-center"
+        ],
+        "rows": [
+          [
+            "15-foot {@variantrule Cube [Area of Effect]|XPHB|Cube}",
+            "18",
+            "{@dice 6d6 + 5}"
+          ],
+          [
+            "30-foot {@variantrule Cube [Area of Effect]|XPHB|Cube}",
+            "17",
+            "{@dice 4d6 + 4}"
+          ],
+          [
+            "50-foot {@variantrule Cube [Area of Effect]|XPHB|Cube}",
+            "15",
+            "{@dice 2d6 + 2}"
+          ],
+          [
+            "100-foot {@variantrule Cube [Area of Effect]|XPHB|Cube}",
+            "14",
+            "{@dice 1d6 + 1}"
+          ]
+        ]
+      }
+    ]
+  }
+]

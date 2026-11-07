@@ -1,5 +1,21 @@
-# TTRPG QoL
+# Relic Item Browser
 
-A home for quality-of-life tools and resources for tabletop role-playing games.
+A searchable field guide for the item datasets under `data/sources/`. Each source has its own JSON file, and `data/manifest.json` lists the source codes and item counts.
 
-This repository is just getting started. More information will be added as the project takes shape.
+## Run locally
+
+Requires Node.js 18 or later. Start the local server with:
+
+```sh
+node server.js
+```
+
+Then open <http://127.0.0.1:4174>.
+
+## Tests
+
+Run the item filtering and summary unit tests with:
+
+```sh
+node --test
+```
