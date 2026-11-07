@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { filterItems, getItemDescription, getItemSummary, getSources, normalizeSearchQuery, parseEntryMarkup, shouldShowItems } from "./item-filter.js";
+import { createItemLink, filterItems, getItemDescription, getItemStats, getItemSummary, getSourceCounts, getSources, normalizeSearchQuery, parseEntryMarkup, resolveItemLink, shouldShowItems } from "./item-filter.js";
 import { getSourceLabel, getSourceName, matchesSourceSearch, sourceNames } from "./source-names.js";
 import { belongsToEdition, EDITION_CUTOFF, edition2024Sources, getItemEditions, sourcePublishedDates } from "./item-editions.js";
 
@@ -75,12 +75,41 @@ test("filters results by selected edition", () => {
   assert.deepEqual(filterItems(editionItems, "", "", "2024").map(({ name }) => name), ["Current Item", "Reprinted Item"]);
 });
 
+test("includes the PHB and XPHB base dagger in the correct edition results", async () => {
+  const readFile = (await import("node:fs/promises")).readFile;
+  const phb = JSON.parse(await readFile(new URL("./data/sources/PHB.json", import.meta.url), "utf8"));
+  const xphb = JSON.parse(await readFile(new URL("./data/sources/XPHB.json", import.meta.url), "utf8"));
+  const dagger2014 = phb.find((item) => item.name === "Dagger");
+  const dagger2024 = xphb.find((item) => item.name === "Dagger");
+  const all = [...phb, ...xphb];
+
+  assert.ok(dagger2014);
+  assert.ok(dagger2024);
+  assert.deepEqual(filterItems(all, "dagger", "", "2014").map((item) => item.source), ["PHB"]);
+  assert.deepEqual(filterItems(all, "dagger", "", "2024").map((item) => item.source), ["XPHB"]);
+  assert.match(getItemSummary(dagger2014), /1d4 piercing/i);
+  assert.deepEqual(getItemStats(dagger2024).find((stat) => stat.label === "Mastery"), { label: "Mastery", value: "Nick" });
+});
+
 test("matches any selected source in a multi-select filter", () => {
   assert.deepEqual(filterItems(items, "", ["DMG", "BMT"]), [items[1], items[3]]);
 });
 
 test("lists unique, sorted non-empty sources", () => {
   assert.deepEqual(getSources(items), ["BMT", "DMG", "TCE"]);
+});
+
+test("counts source options from the currently matching items", () => {
+  assert.deepEqual([...getSourceCounts(filterItems(items, "arcane"))], [["TCE", 1], ["BMT", 1]]);
+  assert.deepEqual([...getSourceCounts(filterItems(items, "", "", "2024"))], []);
+});
+
+test("creates item hyperlinks that resolve to the exact source and page", () => {
+  const item = { name: "Dagger", source: "XPHB", page: 215 };
+  const href = createItemLink(item, "https://example.test/items?view=grid");
+  assert.match(href, /item=XPHB%7CDagger%7C215/);
+  assert.equal(resolveItemLink([item, { ...item, source: "PHB", page: 149 }], `https://example.test${href}`), item);
+  assert.equal(resolveItemLink([item], "https://example.test/items"), null);
 });
 
 test("maps every archive source code to a full source name", async () => {

@@ -1,4 +1,4 @@
-import { filterItems, getItemDescription, getItemSummary, parseEntryMarkup, shouldShowItems } from "./item-filter.js";
+import { createItemLink, filterItems, getItemDescription, getItemStats, getItemSummary, getSourceCounts, normalizeSearchQuery, parseEntryMarkup, resolveItemLink, shouldShowItems } from "./item-filter.js";
 import { getSourceLabel, getSourceName, matchesSourceSearch } from "./source-names.js";
 
 const searchInput = document.querySelector("#search-input");
@@ -27,6 +27,7 @@ let editionSelected = false;
 
 const icons = ["✳", "◇", "⌘", "✦", "◈", "✺"];
 const rarityClass = (rarity = "common") => rarity.toLowerCase().replace(/[^a-z]/g, "");
+const getItemKind = (item) => item.wondrous ? "Wondrous item" : item.weapon ? `${item.weaponCategory === "simple" ? "Simple" : item.weaponCategory === "martial" ? "Martial" : "Weapon"} weapon` : item.ac != null ? "Armor" : item.type && !/^[A-Z]+(?:\|[A-Z0-9]+)?$/.test(item.type) ? item.type : "Equipment";
 
 function render() {
   const canBrowse = shouldShowItems(searchInput.value, selectedSources, editionSelected);
@@ -34,11 +35,10 @@ function render() {
   resultCount.textContent = visibleItems.length.toLocaleString();
   caption.textContent = canBrowse ? "FILTERED ITEMS" : "ADD A FILTER TO BEGIN";
   grid.replaceChildren(...visibleItems.map((item, index) => {
-    const card = document.createElement("article");
+    const card = document.createElement("a");
     card.className = "item-card";
+    card.href = createItemLink(item, window.location.href);
     card.dataset.itemIndex = String(items.indexOf(item));
-    card.tabIndex = 0;
-    card.setAttribute("role", "button");
     card.setAttribute("aria-label", `View full description for ${item.name || "Unnamed item"}`);
     const top = document.createElement("div");
     top.className = "card-top";
@@ -46,8 +46,8 @@ function render() {
     icon.className = "item-icon";
     icon.textContent = icons[index % icons.length];
     const rarity = document.createElement("span");
-    rarity.className = `rarity ${rarityClass(item.rarity)}`;
-    rarity.textContent = item.rarity || "Uncommon";
+    rarity.className = `rarity ${rarityClass(item.rarity === "none" ? "common" : item.rarity)}`;
+    rarity.textContent = item.rarity && item.rarity !== "none" ? item.rarity : getItemKind(item);
     top.append(icon, rarity);
     const title = document.createElement("h3");
     title.textContent = item.name || "Unnamed item";
@@ -59,7 +59,7 @@ function render() {
     const source = document.createElement("span");
     source.textContent = item.source ? getSourceLabel(item.source) : "Unknown source";
     const type = document.createElement("span");
-    type.textContent = item.wondrous ? "WONDROUS ITEM" : (item.type || "MAGIC ITEM").toUpperCase();
+    type.textContent = getItemKind(item).toUpperCase();
     meta.append(source, type);
     card.append(top, title, summary, meta);
     return card;
@@ -69,6 +69,7 @@ function render() {
   emptyState.querySelector("p").textContent = canBrowse
     ? "Try another name or a shorter search."
     : "Select a source or enter at least 3 characters to browse items.";
+  updateSourceOptions();
 }
 
 function appendInlineText(parent, value) {
@@ -169,17 +170,30 @@ function appendEntry(parent, entry) {
 function openItem(item) {
   dialogTitle.textContent = item.name || "Unnamed item";
   dialogMeta.replaceChildren();
-  for (const value of [item.rarity, item.source ? getSourceLabel(item.source) : null, item.type, item.weight ? `${item.weight} lb.` : null, item.reqAttune ? `Attunement: ${item.reqAttune === true ? "required" : item.reqAttune}` : null].filter(Boolean)) {
+  for (const value of [item.rarity && item.rarity !== "none" ? item.rarity : null, item.source ? getSourceLabel(item.source) : null, getItemKind(item), item.weight ? `${item.weight} lb.` : null, item.reqAttune ? `Attunement: ${item.reqAttune === true ? "required" : item.reqAttune}` : null].filter(Boolean)) {
     const chip = document.createElement("span");
     chip.className = "detail-chip";
     chip.textContent = String(value).toUpperCase();
     dialogMeta.append(chip);
   }
   dialogDescription.replaceChildren();
+  const stats = getItemStats(item);
+  if (stats.length) {
+    const list = document.createElement("dl");
+    list.className = "detail-stats";
+    for (const { label, value } of stats) {
+      const term = document.createElement("dt");
+      term.textContent = label;
+      const description = document.createElement("dd");
+      description.textContent = value;
+      list.append(term, description);
+    }
+    dialogDescription.append(list);
+  }
   const description = getItemDescription(item);
   if (description.length) {
     for (const entry of description) appendEntry(dialogDescription, entry);
-  } else {
+  } else if (!stats.length) {
     const paragraph = document.createElement("p");
     paragraph.className = "detail-empty";
     paragraph.textContent = "No description available for this item.";
@@ -188,21 +202,39 @@ function openItem(item) {
   itemDialog.showModal();
 }
 
+function closeItemDialog() {
+  if (!itemDialog.open) return;
+  if (history.state?.itemDetail) {
+    history.back();
+    return;
+  }
+  const url = new URL(window.location.href);
+  url.searchParams.delete("item");
+  history.replaceState(history.state, "", `${url.pathname}${url.search}${url.hash}`);
+  itemDialog.close();
+}
+
 searchInput.addEventListener("input", render);
 grid.addEventListener("click", (event) => {
   const card = event.target.closest(".item-card");
-  if (card) openItem(items[Number(card.dataset.itemIndex)]);
+  if (!card || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  const item = items[Number(card.dataset.itemIndex)];
+  history.pushState({ ...history.state, itemDetail: true }, "", card.href);
+  openItem(item);
 });
-grid.addEventListener("keydown", (event) => {
-  const card = event.target.closest(".item-card");
-  if (card && (event.key === "Enter" || event.key === " ")) {
-    event.preventDefault();
-    openItem(items[Number(card.dataset.itemIndex)]);
-  }
+dialogClose.addEventListener("click", closeItemDialog);
+itemDialog.addEventListener("cancel", (event) => {
+  event.preventDefault();
+  closeItemDialog();
 });
-dialogClose.addEventListener("click", () => itemDialog.close());
 itemDialog.addEventListener("click", (event) => {
-  if (event.target === itemDialog) itemDialog.close();
+  if (event.target === itemDialog) closeItemDialog();
+});
+window.addEventListener("popstate", () => {
+  const item = resolveItemLink(items, window.location.href);
+  if (item) openItem(item);
+  else if (itemDialog.open) itemDialog.close();
 });
 sourceToggle.addEventListener("click", () => {
   const opening = sourcePanel.hidden;
@@ -210,7 +242,7 @@ sourceToggle.addEventListener("click", () => {
   sourceToggle.setAttribute("aria-expanded", String(opening));
   if (opening) sourceSearch.focus();
 });
-sourceSearch.addEventListener("input", filterSourceOptions);
+sourceSearch.addEventListener("input", updateSourceOptions);
 sourcePanel.addEventListener("change", (event) => {
   const checkbox = event.target.closest("input[type='checkbox']");
   if (!checkbox) return;
@@ -223,7 +255,7 @@ clearSources.addEventListener("click", () => {
   selectedSources.clear();
   sourcePanel.querySelectorAll("input[type='checkbox']").forEach((checkbox) => { checkbox.checked = false; });
   sourceSearch.value = "";
-  filterSourceOptions();
+  updateSourceOptions();
   updateSourceLabel();
   render();
 });
@@ -245,14 +277,22 @@ function updateSourceLabel() {
   sourceLabel.textContent = count ? `${count} source${count === 1 ? "" : "s"} selected` : "All sources";
 }
 
-function filterSourceOptions() {
+function updateSourceOptions() {
+  const nameQuery = normalizeSearchQuery(searchInput.value);
+  const relevantItems = filterItems(items, nameQuery, "", selectedEdition);
+  const sourceCounts = getSourceCounts(relevantItems);
   const labels = [...sourceList.querySelectorAll(".source-option")];
   let visibleCount = 0;
   for (const label of labels) {
-    const visible = matchesSourceSearch(label.dataset.code, sourceSearch.value);
+    const count = sourceCounts.get(label.dataset.code) ?? 0;
+    label.querySelector(".source-count").textContent = count.toLocaleString();
+    const visible = count > 0 && matchesSourceSearch(label.dataset.code, sourceSearch.value);
     label.hidden = !visible;
     if (visible) visibleCount++;
   }
+  sourceNoResults.textContent = sourceSearch.value.trim()
+    ? "No matching sources for these filters."
+    : "No sources available for these filters.";
   sourceNoResults.hidden = visibleCount > 0;
 }
 
@@ -298,9 +338,11 @@ try {
     label.append(checkbox, name, abbreviation, itemCount);
     return label;
   }));
-  filterSourceOptions();
+  updateSourceOptions();
   loadingState.remove();
   render();
+  const linkedItem = resolveItemLink(items, window.location.href);
+  if (linkedItem) openItem(linkedItem);
 } catch (error) {
   loadingState.textContent = "The archive could not be opened. Please refresh to try again.";
   console.error(error);

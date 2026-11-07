@@ -56,6 +56,49 @@
     ]
   },
   {
+    "name": "Alchemist's Supplies",
+    "source": "XPHB",
+    "page": 220,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TFV"
+    ],
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 8,
+    "value": 5000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Intelligence"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Identify a substance ({@dc 15}), or start a fire ({@dc 15})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Acid|XPHB}, {@item Alchemist's Fire|XPHB}, {@item Component Pouch|XPHB}, {@item Oil|XPHB}, {@item Paper|XPHB}, {@item Perfume|XPHB}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Ale (mug)",
     "source": "XPHB",
     "page": 231,
@@ -107,6 +150,47 @@
     ]
   },
   {
+    "name": "Arrow",
+    "source": "XPHB",
+    "page": 222,
+    "srd52": true,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 0.05,
+    "value": 5,
+    "arrow": true,
+    "entries": [
+      "Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+      "Arrows are typically stored in a {@item Quiver|XPHB} (bought separately)."
+    ]
+  },
+  {
+    "name": "Arrows (20)",
+    "source": "XPHB",
+    "page": 222,
+    "srd52": true,
+    "referenceSources": [
+      "DrDe-TWoO"
+    ],
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 100,
+    "arrow": true,
+    "entries": [
+      "Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+      "Arrows are typically stored in a {@item Quiver|XPHB} (bought separately)."
+    ],
+    "packContents": [
+      {
+        "item": "arrow|xphb",
+        "quantity": 20
+      }
+    ]
+  },
+  {
     "name": "Backpack",
     "source": "XPHB",
     "page": 224,
@@ -128,6 +212,40 @@
         30
       ]
     }
+  },
+  {
+    "name": "Bagpipes",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "INS|XPHB",
+    "rarity": "none",
+    "weight": 6,
+    "value": 3000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Charisma"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Play a known tune ({@dc 10}), or improvise a song ({@dc 15})"
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Ball Bearings",
@@ -202,6 +320,31 @@
     }
   },
   {
+    "name": "Battleaxe",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 4,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "Topple|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "axe": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
     "name": "Bedroll",
     "source": "XPHB",
     "page": 224,
@@ -263,6 +406,70 @@
     ]
   },
   {
+    "name": "Blowgun",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "LD|XPHB"
+    ],
+    "mastery": [
+      "Vex|XPHB"
+    ],
+    "range": "25/100",
+    "dmg1": "1",
+    "dmgType": "P",
+    "weapon": true,
+    "ammoType": "needle|xphb",
+    "hasFluffImages": true
+  },
+  {
+    "name": "Bolt",
+    "source": "XPHB",
+    "page": 222,
+    "srd52": true,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 0.075,
+    "value": 5,
+    "bolt": true,
+    "entries": [
+      "Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+      "Bolts are typically stored in a {@item Crossbow Bolt Case|XPHB} (bought separately)."
+    ]
+  },
+  {
+    "name": "Bolts (20)",
+    "source": "XPHB",
+    "page": 222,
+    "srd52": true,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 1.5,
+    "value": 100,
+    "bolt": true,
+    "entries": [
+      "Crossbow bolts are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+      "Bolts are typically stored in a {@item Crossbow Bolt Case|XPHB} (bought separately)."
+    ],
+    "packContents": [
+      {
+        "item": "bolt|xphb",
+        "quantity": 20
+      }
+    ]
+  },
+  {
     "name": "Book",
     "source": "XPHB",
     "page": 224,
@@ -287,6 +494,69 @@
     "value": 2,
     "miscTags": [
       "CNS"
+    ]
+  },
+  {
+    "name": "Breastplate",
+    "source": "XPHB",
+    "page": 219,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TFV",
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "none",
+    "weight": 20,
+    "value": 40000,
+    "ac": 14,
+    "armor": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Brewer's Supplies",
+    "source": "XPHB",
+    "page": 220,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN",
+      "DrDe-TFV"
+    ],
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 9,
+    "value": 2000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Intelligence"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Detect poisoned drink ({@dc 15}), or identify alcohol ({@dc 10})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Antitoxin|XPHB}"
+            ]
+          }
+        ]
+      }
     ]
   },
   {
@@ -366,6 +636,46 @@
     ]
   },
   {
+    "name": "Calligrapher's Supplies",
+    "source": "XPHB",
+    "page": 220,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 1000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Dexterity"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Write text with impressive flourishes that guard against forgery ({@dc 15})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Ink|XPHB}, {@item Spell Scroll|XDMG}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Caltrops",
     "source": "XPHB",
     "page": 224,
@@ -422,6 +732,46 @@
     ]
   },
   {
+    "name": "Carpenter's Tools",
+    "source": "XPHB",
+    "page": 220,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 6,
+    "value": 800,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Strength"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Seal or pry open a door or container ({@dc 20})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Club|XPHB}, {@item Greatclub|XPHB}, {@item Quarterstaff|XPHB}, {@item Barrel|XPHB}, {@item Chest|XPHB}, {@item Ladder|XPHB}, {@item Pole|XPHB}, {@item Portable Ram|XPHB}, {@item Torch|XPHB}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Carriage",
     "source": "XPHB",
     "page": 230,
@@ -444,6 +794,46 @@
     "value": 1500
   },
   {
+    "name": "Cartographer's Tools",
+    "source": "XPHB",
+    "page": 220,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 6,
+    "value": 1500,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Wisdom"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Draft a map of a small area ({@dc 15})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Map|XPHB}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Chain",
     "source": "XPHB",
     "page": 224,
@@ -456,6 +846,38 @@
     "entries": [
       "As a {@action Utilize|XPHB} action, you can wrap a Chain around an unwilling creature within 5 feet of yourself that has the {@condition Grappled|XPHB}, {@condition Incapacitated|XPHB}, or {@condition Restrained|XPHB} condition if you succeed on a {@dc 13} Strength ({@skill Athletics|XPHB}) check. If the creature's legs are bound, the creature has the {@condition Restrained|XPHB} condition until it escapes. Escaping the Chain requires the creature to make a successful {@dc 18} Dexterity ({@skill Acrobatics|XPHB}) check as an action. Bursting the Chain requires a successful {@dc 20} Strength ({@skill Athletics|XPHB}) check as an action."
     ]
+  },
+  {
+    "name": "Chain Mail",
+    "source": "XPHB",
+    "page": 219,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "HA|XPHB",
+    "rarity": "none",
+    "weight": 55,
+    "value": 7500,
+    "ac": 16,
+    "strength": "13",
+    "armor": true,
+    "stealth": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Chain Shirt",
+    "source": "XPHB",
+    "page": 219,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "none",
+    "weight": 20,
+    "value": 5000,
+    "ac": 13,
+    "armor": true,
+    "hasFluffImages": true
   },
   {
     "name": "Chariot",
@@ -515,6 +937,73 @@
     ]
   },
   {
+    "name": "Club",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 10,
+    "weaponCategory": "simple",
+    "property": [
+      "L|XPHB"
+    ],
+    "mastery": [
+      "Slow|XPHB"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "club": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Cobbler's Tools",
+    "source": "XPHB",
+    "page": 220,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 500,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Dexterity"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Modify footwear to give {@variantrule Advantage|XPHB} on the wearer's next Dexterity ({@skill Acrobatics|XPHB}) check ({@dc 10})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Climber's Kit|XPHB}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Common Wine (bottle)",
     "source": "XPHB",
     "page": 231,
@@ -539,6 +1028,49 @@
     "value": 2500,
     "entries": [
       "A Component Pouch is watertight and filled with compartments that hold all the free Material components of your spells."
+    ]
+  },
+  {
+    "name": "Cook's Utensils",
+    "source": "XPHB",
+    "page": 220,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 8,
+    "value": 100,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Wisdom"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Improve food's flavor ({@dc 10}), or detect spoiled or poisoned food ({@dc 15})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Rations|XPHB}"
+            ]
+          }
+        ]
+      }
     ]
   },
   {
@@ -592,6 +1124,77 @@
     "entries": [
       "Using a Crowbar gives you {@variantrule Advantage|XPHB} on Strength checks where the Crowbar's leverage can be applied."
     ]
+  },
+  {
+    "name": "Crystal",
+    "group": [
+      "Arcane Focus"
+    ],
+    "source": "XPHB",
+    "page": 224,
+    "srd52": true,
+    "edition": "one",
+    "type": "SCF|XPHB",
+    "scfType": "arcane",
+    "rarity": "none",
+    "weight": 1,
+    "value": 1000
+  },
+  {
+    "name": "Dagger",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TFV",
+      "DrDe-TWoO"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 200,
+    "weaponCategory": "simple",
+    "property": [
+      "F|XPHB",
+      "L|XPHB",
+      "T|XPHB"
+    ],
+    "mastery": [
+      "Nick|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "dagger": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Dart",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 0.25,
+    "value": 5,
+    "weaponCategory": "simple",
+    "property": [
+      "F|XPHB",
+      "T|XPHB"
+    ],
+    "mastery": [
+      "Vex|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "weapon": true,
+    "hasFluffImages": true
   },
   {
     "name": "Dice Set",
@@ -750,6 +1353,77 @@
             "name": "Utilize:",
             "entries": [
               "Discern whether someone is cheating ({@dc 10}), or win the game ({@dc 20})"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Drum",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "INS|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "value": 600,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Charisma"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Play a known tune ({@dc 10}), or improvise a song ({@dc 15})"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dulcimer",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "INS|XPHB",
+    "rarity": "none",
+    "weight": 10,
+    "value": 2500,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Charisma"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Play a known tune ({@dc 10}), or improvise a song ({@dc 15})"
             ]
           }
         ]
@@ -943,6 +1617,68 @@
     ]
   },
   {
+    "name": "Firearm Bullet",
+    "source": "XPHB",
+    "page": 222,
+    "srd52": true,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 0.2,
+    "value": 30,
+    "bulletFirearm": true,
+    "entries": [
+      "Firearm Bullets are destroyed upon use in a modern firearm."
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  },
+  {
+    "name": "Firearm Bullets (10)",
+    "source": "XPHB",
+    "page": 222,
+    "srd52": true,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 300,
+    "bulletFirearm": true,
+    "entries": [
+      "Firearm Bullets are destroyed upon use in a modern firearm."
+    ],
+    "packContents": [
+      {
+        "item": "firearm bullet|xphb",
+        "quantity": 10
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  },
+  {
+    "name": "Flail",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "mastery": [
+      "Sap|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "B",
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
     "name": "Flask",
     "source": "XPHB",
     "page": 225,
@@ -960,6 +1696,43 @@
         0.02
       ]
     }
+  },
+  {
+    "name": "Flute",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "INS|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 200,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Charisma"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Play a known tune ({@dc 10}), or improvise a song ({@dc 15})"
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Forgery Kit",
@@ -1014,6 +1787,32 @@
     ]
   },
   {
+    "name": "Glaive",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 6,
+    "value": 2000,
+    "weaponCategory": "martial",
+    "property": [
+      "H|XPHB",
+      "R|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "Graze|XPHB"
+    ],
+    "dmg1": "1d10",
+    "dmgType": "S",
+    "polearm": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
     "name": "Glass Bottle",
     "source": "XPHB",
     "page": 224,
@@ -1036,6 +1835,49 @@
     }
   },
   {
+    "name": "Glassblower's Tools",
+    "source": "XPHB",
+    "page": 220,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 3000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Intelligence"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Discern what a glass object held in the past 24 hours ({@dc 15})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Glass Bottle|XPHB}, {@item Magnifying Glass|XPHB}, {@item Spyglass|XPHB}, {@item Vial|XPHB}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Grappling Hook",
     "source": "XPHB",
     "page": 225,
@@ -1048,6 +1890,182 @@
     "entries": [
       "As a {@action Utilize|XPHB} action, you can throw the Grappling Hook at a railing, a ledge, or another catch within 50 feet of yourself, and the hook catches on if you succeed on a {@dc 13} Dexterity ({@skill Acrobatics|XPHB}) check. If you tied a Rope to the hook, you can then climb it."
     ]
+  },
+  {
+    "name": "Greataxe",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 7,
+    "value": 3000,
+    "weaponCategory": "martial",
+    "property": [
+      "H|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "Cleave|XPHB"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "S",
+    "axe": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Greatclub",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-BD"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 10,
+    "value": 20,
+    "weaponCategory": "simple",
+    "property": [
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "Push|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "B",
+    "club": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Greatsword",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 6,
+    "value": 5000,
+    "weaponCategory": "martial",
+    "property": [
+      "H|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "Graze|XPHB"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "S",
+    "sword": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Halberd",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 6,
+    "value": 2000,
+    "weaponCategory": "martial",
+    "property": [
+      "H|XPHB",
+      "R|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "Cleave|XPHB"
+    ],
+    "dmg1": "1d10",
+    "dmgType": "S",
+    "polearm": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Half Plate Armor",
+    "source": "XPHB",
+    "page": 219,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "none",
+    "weight": 40,
+    "value": 75000,
+    "ac": 15,
+    "armor": true,
+    "stealth": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Hand Crossbow",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "value": 7500,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "L|XPHB",
+      "LD|XPHB"
+    ],
+    "mastery": [
+      "Vex|XPHB"
+    ],
+    "range": "30/120",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "crossbow": true,
+    "weapon": true,
+    "ammoType": "bolt|xphb",
+    "hasFluffImages": true
+  },
+  {
+    "name": "Handaxe",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 500,
+    "weaponCategory": "simple",
+    "property": [
+      "L|XPHB",
+      "T|XPHB"
+    ],
+    "mastery": [
+      "Vex|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d6",
+    "dmgType": "S",
+    "axe": true,
+    "weapon": true,
+    "hasFluffImages": true
   },
   {
     "name": "Healer's Kit",
@@ -1067,6 +2085,35 @@
     "entries": [
       "A Healer's Kit has ten uses. As a {@action Utilize|XPHB} action, you can expend one of its uses to stabilize an {@condition Unconscious|XPHB} creature that has 0 {@variantrule Hit Points|XPHB} without needing to make a Wisdom ({@skill Medicine|XPHB}) check."
     ]
+  },
+  {
+    "name": "Heavy Crossbow",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 18,
+    "value": 5000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "H|XPHB",
+      "LD|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "Push|XPHB"
+    ],
+    "range": "100/400",
+    "dmg1": "1d10",
+    "dmgType": "P",
+    "crossbow": true,
+    "weapon": true,
+    "ammoType": "bolt|xphb",
+    "hasFluffImages": true
   },
   {
     "name": "Herbalism Kit",
@@ -1107,6 +2154,21 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Hide Armor",
+    "source": "XPHB",
+    "page": 219,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "none",
+    "weight": 12,
+    "value": 1000,
+    "ac": 12,
+    "armor": true,
+    "hasFluffImages": true
   },
   {
     "name": "Holy Water",
@@ -1154,6 +2216,40 @@
       },
       {
         "dim": 5
+      }
+    ]
+  },
+  {
+    "name": "Horn",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "INS|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 300,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Charisma"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Play a known tune ({@dc 10}), or improvise a song ({@dc 15})"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1262,6 +2358,74 @@
     ]
   },
   {
+    "name": "Javelin",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 50,
+    "weaponCategory": "simple",
+    "property": [
+      "T|XPHB"
+    ],
+    "mastery": [
+      "Slow|XPHB"
+    ],
+    "range": "30/120",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "spear": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Jeweler's Tools",
+    "source": "XPHB",
+    "page": 220,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TFV"
+    ],
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 2500,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Intelligence"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Discern a gem's value ({@dc 15})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Arcane Focus|XPHB}, {@item Holy Symbol|XPHB}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Jug",
     "source": "XPHB",
     "page": 226,
@@ -1339,6 +2503,150 @@
     "hasFluffImages": true
   },
   {
+    "name": "Lance",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 6,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "H|XPHB",
+      "R|XPHB",
+      {
+        "uid": "2H|XPHB",
+        "note": "unless mounted"
+      }
+    ],
+    "mastery": [
+      "Topple|XPHB"
+    ],
+    "dmg1": "1d10",
+    "dmgType": "P",
+    "lance": true,
+    "weapon": true,
+    "entries": [
+      "A Lance requires two hands to wield when you aren't mounted."
+    ],
+    "hasFluffImages": true
+  },
+  {
+    "name": "Leather Armor",
+    "source": "XPHB",
+    "page": 219,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "LA|XPHB",
+    "rarity": "none",
+    "weight": 10,
+    "value": 1000,
+    "ac": 11,
+    "armor": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Leatherworker's Tools",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 500,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Dexterity"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Add a design to a leather item ({@dc 10})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Sling|XPHB}, {@item Whip|XPHB}, {@item Hide Armor|XPHB}, {@item Leather Armor|XPHB}, {@item Studded Leather Armor|XPHB}, {@item Backpack|XPHB}, {@item Crossbow Bolt Case|XPHB}, {@item Map or Scroll Case|XPHB}, {@item Parchment|XPHB}, {@item Pouch|XPHB}, {@item Quiver|XPHB}, {@item Waterskin|XPHB}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Light Crossbow",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-DaS"
+    ],
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 2500,
+    "weaponCategory": "simple",
+    "property": [
+      "A|XPHB",
+      "LD|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "Slow|XPHB"
+    ],
+    "range": "80/320",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "crossbow": true,
+    "weapon": true,
+    "ammoType": "bolt|xphb",
+    "hasFluffImages": true
+  },
+  {
+    "name": "Light Hammer",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 200,
+    "weaponCategory": "simple",
+    "property": [
+      "L|XPHB",
+      "T|XPHB"
+    ],
+    "mastery": [
+      "Nick|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "hammer": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
     "name": "Lock",
     "source": "XPHB",
     "page": 226,
@@ -1351,6 +2659,34 @@
     "entries": [
       "A Lock comes with a key. Without the key, a creature can use {@item Thieves' Tools|XPHB} to pick this Lock with a successful {@dc 15} Dexterity ({@skill Sleight of Hand|XPHB}) check."
     ]
+  },
+  {
+    "name": "Longbow",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 5000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "H|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "Slow|XPHB"
+    ],
+    "range": "150/600",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "bow": true,
+    "weapon": true,
+    "ammoType": "arrow|xphb",
+    "hasFluffImages": true
   },
   {
     "name": "Longship",
@@ -1371,6 +2707,126 @@
     "seeAlsoVehicle": [
       "longship"
     ]
+  },
+  {
+    "name": "Longsword",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "value": 1500,
+    "weaponCategory": "martial",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "Sap|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "sword": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Lute",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "INS|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 3500,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Charisma"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Play a known tune ({@dc 10}), or improvise a song ({@dc 15})"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lyre",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "INS|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 3000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Charisma"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Play a known tune ({@dc 10}), or improvise a song ({@dc 15})"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mace",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 4,
+    "value": 500,
+    "weaponCategory": "simple",
+    "mastery": [
+      "Sap|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "mace": true,
+    "weapon": true,
+    "hasFluffImages": true
   },
   {
     "name": "Magnifying Glass",
@@ -1436,6 +2892,50 @@
     }
   },
   {
+    "name": "Mason's Tools",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN",
+      "DrDe-TFV"
+    ],
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 8,
+    "value": 1000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Strength"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Chisel a symbol or hole in stone ({@dc 10})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Block and Tackle|XPHB}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Mastiff",
     "source": "XPHB",
     "page": 229,
@@ -1446,6 +2946,34 @@
     "value": 2500,
     "carryingCapacity": 195,
     "speed": 40
+  },
+  {
+    "name": "Maul",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 10,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "H|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "Topple|XPHB"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "B",
+    "hammer": true,
+    "weapon": true,
+    "hasFluffImages": true
   },
   {
     "name": "Military Saddle",
@@ -1476,6 +3004,27 @@
     ]
   },
   {
+    "name": "Morningstar",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 4,
+    "value": 1500,
+    "weaponCategory": "martial",
+    "mastery": [
+      "Sap|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "mace": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
     "name": "Mule",
     "source": "XPHB",
     "page": 229,
@@ -1486,6 +3035,34 @@
     "value": 800,
     "carryingCapacity": 420,
     "speed": 40
+  },
+  {
+    "name": "Musket",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 10,
+    "value": 50000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "LD|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "Slow|XPHB"
+    ],
+    "range": "40/120",
+    "dmg1": "1d12",
+    "dmgType": "P",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "firearm bullet|xphb",
+    "hasFluffImages": true
   },
   {
     "name": "Navigator's Tools",
@@ -1517,6 +3094,44 @@
             ]
           }
         ]
+      }
+    ]
+  },
+  {
+    "name": "Needle",
+    "source": "XPHB",
+    "page": 222,
+    "srd52": true,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 0.02,
+    "value": 2,
+    "needleBlowgun": true,
+    "entries": [
+      "Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+      "Needles are typically stored in a {@item Pouch|XPHB} (bought separately)."
+    ]
+  },
+  {
+    "name": "Needles (50)",
+    "source": "XPHB",
+    "page": 222,
+    "srd52": true,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 100,
+    "needleBlowgun": true,
+    "entries": [
+      "Blowgun needles are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+      "Needles are typically stored in a {@item Pouch|XPHB} (bought separately)."
+    ],
+    "packContents": [
+      {
+        "item": "needle|xphb",
+        "quantity": 50
       }
     ]
   },
@@ -1582,6 +3197,114 @@
     ]
   },
   {
+    "name": "Orb",
+    "group": [
+      "Arcane Focus"
+    ],
+    "source": "XPHB",
+    "page": 224,
+    "srd52": true,
+    "edition": "one",
+    "type": "SCF|XPHB",
+    "scfType": "arcane",
+    "rarity": "none",
+    "weight": 3,
+    "value": 2000
+  },
+  {
+    "name": "Padded Armor",
+    "source": "XPHB",
+    "page": 219,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "LA|XPHB",
+    "rarity": "none",
+    "weight": 8,
+    "value": 500,
+    "ac": 11,
+    "armor": true,
+    "stealth": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Painter's Supplies",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 1000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Wisdom"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Paint a recognizable image of something you've seen ({@dc 10})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Druidic Focus|XPHB}, {@item Holy Symbol|XPHB}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Pan Flute",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "INS|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 1200,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Charisma"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Play a known tune ({@dc 10}), or improvise a song ({@dc 15})"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Paper",
     "source": "XPHB",
     "page": 227,
@@ -1626,6 +3349,75 @@
     "miscTags": [
       "CNS"
     ]
+  },
+  {
+    "name": "Pike",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 18,
+    "value": 500,
+    "weaponCategory": "martial",
+    "property": [
+      "H|XPHB",
+      "R|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "Push|XPHB"
+    ],
+    "dmg1": "1d10",
+    "dmgType": "P",
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Pistol",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "value": 25000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "LD|XPHB"
+    ],
+    "mastery": [
+      "Vex|XPHB"
+    ],
+    "range": "30/90",
+    "dmg1": "1d10",
+    "dmgType": "P",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "firearm bullet|xphb",
+    "hasFluffImages": true
+  },
+  {
+    "name": "Plate Armor",
+    "source": "XPHB",
+    "page": 219,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "HA|XPHB",
+    "rarity": "none",
+    "weight": 65,
+    "value": 150000,
+    "ac": 18,
+    "strength": "15",
+    "armor": true,
+    "stealth": true,
+    "hasFluffImages": true
   },
   {
     "name": "Playing Cards",
@@ -1740,6 +3532,49 @@
     ]
   },
   {
+    "name": "Potter's Tools",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "value": 1000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Intelligence"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Discern what a ceramic object held in the past 24 hours ({@dc 15})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Jug|XPHB}, {@item Lamp|XPHB}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Pouch",
     "source": "XPHB",
     "page": 228,
@@ -1813,6 +3648,30 @@
     "dmgType": "Y"
   },
   {
+    "name": "Quarterstaff",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 4,
+    "value": 20,
+    "weaponCategory": "simple",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "Topple|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
     "name": "Quiver",
     "source": "XPHB",
     "page": 228,
@@ -1835,6 +3694,34 @@
         }
       ]
     }
+  },
+  {
+    "name": "Rapier",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 2500,
+    "weaponCategory": "martial",
+    "property": [
+      "F|XPHB"
+    ],
+    "mastery": [
+      "Vex|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "rapier": true,
+    "sword": true,
+    "weapon": true,
+    "hasFluffImages": true
   },
   {
     "name": "Rations",
@@ -1906,6 +3793,22 @@
     ]
   },
   {
+    "name": "Ring Mail",
+    "source": "XPHB",
+    "page": 219,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "HA|XPHB",
+    "rarity": "none",
+    "weight": 40,
+    "value": 3000,
+    "ac": 14,
+    "armor": true,
+    "stealth": true,
+    "hasFluffImages": true
+  },
+  {
     "name": "Robe",
     "source": "XPHB",
     "page": 228,
@@ -1918,6 +3821,21 @@
     "entries": [
       "A Robe has vocational or ceremonial significance. Some events and locations admit only people wearing a Robe bearing certain colors or symbols."
     ]
+  },
+  {
+    "name": "Rod",
+    "group": [
+      "Arcane Focus"
+    ],
+    "source": "XPHB",
+    "page": 224,
+    "srd52": true,
+    "edition": "one",
+    "type": "SCF|XPHB",
+    "scfType": "arcane",
+    "rarity": "none",
+    "weight": 2,
+    "value": 1000
   },
   {
     "name": "Rope",
@@ -2004,6 +3922,25 @@
     ]
   },
   {
+    "name": "Scale Mail",
+    "source": "XPHB",
+    "page": 219,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "FFotR"
+    ],
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "none",
+    "weight": 45,
+    "value": 5000,
+    "ac": 14,
+    "armor": true,
+    "stealth": true,
+    "hasFluffImages": true
+  },
+  {
     "name": "Scholar's Pack",
     "source": "XPHB",
     "page": 228,
@@ -2034,6 +3971,145 @@
     ]
   },
   {
+    "name": "Scimitar",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-DaS"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "value": 2500,
+    "weaponCategory": "martial",
+    "property": [
+      "F|XPHB",
+      "L|XPHB"
+    ],
+    "mastery": [
+      "Nick|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "S",
+    "sword": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Shawm",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "INS|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 200,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Charisma"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Play a known tune ({@dc 10}), or improvise a song ({@dc 15})"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shield",
+    "source": "XPHB",
+    "page": 219,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TFV",
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "S|XPHB",
+    "rarity": "none",
+    "weight": 6,
+    "value": 1000,
+    "ac": 2,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Shortbow",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TWoO"
+    ],
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 2500,
+    "weaponCategory": "simple",
+    "property": [
+      "A|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "Vex|XPHB"
+    ],
+    "range": "80/320",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "bow": true,
+    "weapon": true,
+    "ammoType": "arrow|xphb",
+    "hasFluffImages": true
+  },
+  {
+    "name": "Shortsword",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-SD",
+      "DrDe-TWoO"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "F|XPHB",
+      "L|XPHB"
+    ],
+    "mastery": [
+      "Vex|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "sword": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
     "name": "Shovel",
     "source": "XPHB",
     "page": 228,
@@ -2049,6 +4125,29 @@
     "entries": [
       "Working for 1 hour, you can use a Shovel to dig a hole that is 5 feet on each side in soil or similar material."
     ]
+  },
+  {
+    "name": "Sickle",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 100,
+    "weaponCategory": "simple",
+    "property": [
+      "L|XPHB"
+    ],
+    "mastery": [
+      "Nick|XPHB"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "S",
+    "weapon": true,
+    "hasFluffImages": true
   },
   {
     "name": "Signal Whistle",
@@ -2073,6 +4172,158 @@
     "rarity": "none",
     "weight": 300,
     "value": 2000
+  },
+  {
+    "name": "Sling",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "value": 10,
+    "weaponCategory": "simple",
+    "property": [
+      "A|XPHB"
+    ],
+    "mastery": [
+      "Slow|XPHB"
+    ],
+    "range": "30/120",
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "weapon": true,
+    "ammoType": "sling bullet|xphb",
+    "hasFluffImages": true
+  },
+  {
+    "name": "Sling Bullet",
+    "source": "XPHB",
+    "page": 222,
+    "srd52": true,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 0.075,
+    "value": 0.2,
+    "bulletSling": true,
+    "entries": [
+      "Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+      "Sling Bullets are typically stored in a {@item Pouch|XPHB} (bought separately)."
+    ]
+  },
+  {
+    "name": "Sling Bullets (20)",
+    "source": "XPHB",
+    "page": 222,
+    "srd52": true,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 1.5,
+    "value": 4,
+    "bulletSling": true,
+    "entries": [
+      "Sling bullets are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+      "Sling Bullets are typically stored in a {@item Pouch|XPHB} (bought separately)."
+    ],
+    "packContents": [
+      {
+        "item": "sling bullet|xphb",
+        "quantity": 20
+      }
+    ]
+  },
+  {
+    "name": "Smith's Tools",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 8,
+    "value": 2000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Strength"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Pry open a door or container ({@dc 20})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "Any Melee weapon (except {@item Club|XPHB}, {@item Greatclub|XPHB}, {@item Quarterstaff|XPHB}, and {@item Whip|XPHB}), Medium armor (except {@item Hide Armor|XPHB|Hide}), Heavy armor, {@item Ball Bearings|XPHB}, {@item Bucket|XPHB}, {@item Caltrops|XPHB}, {@item Chain|XPHB}, {@item Crowbar|XPHB}, {@item Firearm Bullets (10)|XPHB|Firearm Bullets}, {@item Grappling Hook|XPHB}, {@item Iron Pot|XPHB}, {@item Iron Spikes|XPHB}, {@item Sling Bullets (20)|XPHB|Sling Bullets}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Spear",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "value": 100,
+    "weaponCategory": "simple",
+    "property": [
+      "T|XPHB",
+      "V|XPHB"
+    ],
+    "mastery": [
+      "Sap|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "dmg2": "1d8",
+    "spear": true,
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Splint Armor",
+    "source": "XPHB",
+    "page": 219,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "HA|XPHB",
+    "rarity": "none",
+    "weight": 60,
+    "value": 20000,
+    "ac": 17,
+    "strength": "15",
+    "armor": true,
+    "stealth": true,
+    "hasFluffImages": true
   },
   {
     "name": "Sprig of Mistletoe",
@@ -2116,6 +4367,32 @@
     "value": 5
   },
   {
+    "name": "Staff",
+    "group": [
+      "Arcane Focus"
+    ],
+    "source": "XPHB",
+    "page": 224,
+    "srd52": true,
+    "edition": "one",
+    "type": "SCF|XPHB",
+    "scfType": "arcane",
+    "rarity": "none",
+    "weight": 4,
+    "value": 500,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "mastery": [
+      "Topple|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "staff": true
+  },
+  {
     "name": "String",
     "source": "XPHB",
     "page": 229,
@@ -2127,6 +4404,24 @@
     "entries": [
       "String is 10 feet long. You can tie a knot in it as a {@action Utilize|XPHB} action."
     ]
+  },
+  {
+    "name": "Studded Leather Armor",
+    "source": "XPHB",
+    "page": 219,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "LA|XPHB",
+    "rarity": "none",
+    "weight": 13,
+    "value": 4500,
+    "ac": 12,
+    "armor": true,
+    "hasFluffImages": true
   },
   {
     "name": "Tent",
@@ -2231,6 +4526,46 @@
     ]
   },
   {
+    "name": "Tinker's Tools",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 10,
+    "value": 5000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Dexterity"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Assemble a Tiny item composed of scrap, which falls apart in 1 minute ({@dc 20})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Musket|XPHB}, {@item Pistol|XPHB}, {@item Bell|XPHB}, {@item Bullseye Lantern|XPHB}, {@item Flask|XPHB}, {@item Hooded Lantern|XPHB}, {@item Hunting Trap|XPHB}, {@item Lock|XPHB}, {@item Manacles|XPHB}, {@item Mirror|XPHB}, {@item Shovel|XPHB}, {@item Signal Whistle|XPHB}, {@item Tinderbox|XPHB}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Torch",
     "source": "XPHB",
     "page": 229,
@@ -2270,6 +4605,32 @@
     "entries": [
       "Traveler's Clothes are resilient garments designed for travel in various environments."
     ]
+  },
+  {
+    "name": "Trident",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 4,
+    "value": 500,
+    "weaponCategory": "martial",
+    "property": [
+      "T|XPHB",
+      "V|XPHB"
+    ],
+    "mastery": [
+      "Topple|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "dmg2": "1d10",
+    "weapon": true,
+    "hasFluffImages": true
   },
   {
     "name": "Trinket",
@@ -2724,6 +5085,43 @@
     }
   },
   {
+    "name": "Viol",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "INS|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 3000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Charisma"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Play a known tune ({@dc 10}), or improvise a song ({@dc 15})"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Wagon",
     "source": "XPHB",
     "page": 230,
@@ -2733,6 +5131,70 @@
     "rarity": "none",
     "weight": 400,
     "value": 3500
+  },
+  {
+    "name": "Wand",
+    "group": [
+      "Arcane Focus"
+    ],
+    "source": "XPHB",
+    "page": 224,
+    "srd52": true,
+    "edition": "one",
+    "type": "SCF|XPHB",
+    "scfType": "arcane",
+    "rarity": "none",
+    "weight": 1,
+    "value": 1000
+  },
+  {
+    "name": "War Pick",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 500,
+    "weaponCategory": "martial",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "Sap|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "dmg2": "1d10",
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Warhammer",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 1500,
+    "weaponCategory": "martial",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "Push|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "B",
+    "dmg2": "1d10",
+    "hammer": true,
+    "weapon": true,
+    "hasFluffImages": true
   },
   {
     "name": "Warhorse",
@@ -2789,6 +5251,141 @@
         0.08
       ]
     }
+  },
+  {
+    "name": "Weaver's Tools",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 100,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Dexterity"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Mend a tear in clothing ({@dc 10}), or sew a Tiny design ({@dc 10})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Padded Armor|XPHB}, {@item Basket|XPHB}, {@item Bedroll|XPHB}, {@item Blanket|XPHB}, {@item Fine Clothes|XPHB}, {@item Net|XPHB}, {@item Robe|XPHB}, {@item Rope|XPHB}, {@item Sack|XPHB}, {@item String|XPHB}, {@item Tent|XPHB}, {@item Traveler's Clothes|XPHB}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Whip",
+    "source": "XPHB",
+    "page": 215,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "value": 200,
+    "weaponCategory": "martial",
+    "property": [
+      "F|XPHB",
+      "R|XPHB"
+    ],
+    "mastery": [
+      "Slow|XPHB"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "S",
+    "weapon": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "Woodcarver's Tools",
+    "source": "XPHB",
+    "page": 221,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 100,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "type": "item",
+            "name": "Ability:",
+            "entries": [
+              "Dexterity"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Utilize:",
+            "entries": [
+              "Carve a pattern in wood ({@dc 10})"
+            ]
+          },
+          {
+            "type": "item",
+            "name": "Craft:",
+            "entries": [
+              "{@item Club|XPHB}, {@item Greatclub|XPHB}, {@item Quarterstaff|XPHB}, Ranged weapons (except {@item Pistol|XPHB}, {@item Musket|XPHB}, and {@item Sling|XPHB}), {@item Arcane Focus|XPHB}, {@item Arrows (20)|XPHB|Arrows}, {@item Bolts (20)|XPHB|Bolts}, {@item Druidic Focus|XPHB}, {@item Ink Pen|XPHB}, {@item Needles (50)|XPHB|Needles}"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wooden Staff",
+    "group": [
+      "Druidic Focus"
+    ],
+    "source": "XPHB",
+    "page": 225,
+    "srd52": true,
+    "edition": "one",
+    "type": "SCF|XPHB",
+    "scfType": "druid",
+    "rarity": "none",
+    "weight": 4,
+    "value": 500,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "mastery": [
+      "Topple|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8"
   },
   {
     "name": "Yew Wand",
