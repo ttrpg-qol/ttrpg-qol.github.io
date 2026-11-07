@@ -36,23 +36,43 @@
           <input id="search-input" type="search" placeholder="Search by item name…" autocomplete="off" />
           <kbd>/</kbd>
         </label>
+        <div class="edition-filter" role="group" aria-label="Filter items by ruleset">
+          <span class="filter-label">RULESET</span>
+          <div class="edition-toggle">
+            <button class="edition-option" type="button" data-edition="2014" aria-pressed="true">2014</button>
+            <button class="edition-option" type="button" data-edition="2024" aria-pressed="false">2024</button>
+          </div>
+        </div>
         <div class="filter-row">
           <span class="filter-label">SOURCE</span>
           <div class="source-picker">
             <button id="source-toggle" class="source-toggle" type="button" aria-expanded="false" aria-controls="source-options">
               <span id="source-toggle-label">All sources</span><span class="source-chevron" aria-hidden="true"></span>
             </button>
-            <div id="source-options" class="source-options" role="group" aria-label="Filter items by source" hidden></div>
+            <div id="source-options" class="source-options" role="group" aria-label="Filter items by source" hidden>
+              <input id="source-search" class="source-search" type="search" placeholder="Search sources…" aria-label="Search sources by name or abbreviation" autocomplete="off" />
+              <div id="source-list" class="source-list"></div>
+              <p id="source-no-results" class="source-no-results" hidden>No sources match that search.</p>
+            </div>
             <button id="clear-sources" class="clear-sources" type="button">Clear</button>
           </div>
           <span class="filter-hint">Select one or more source codes</span>
         </div>
-        <div class="list-toolbar"><span id="list-caption">ALL ITEMS</span><span>NAME <span class="sort-arrow">↕</span></span></div>
+        <div class="list-toolbar"><span id="list-caption">ALL ITEMS</span><span>NAME <span class="sort-arrow" aria-label="ascending">↑</span></span></div>
         <div id="items-grid" class="items-grid" aria-live="polite"></div>
         <div id="empty-state" class="empty-state" hidden><span>⌕</span><h3>No artifacts found</h3><p>Try another name or a shorter search.</p></div>
         <div id="loading-state" class="loading-state">Opening the archive…</div>
       </section>
     </main>
     <footer><span>RELIC FIELD GUIDE</span><span>THE ARCHIVE IS ALWAYS GROWING <b>✦</b></span></footer>
+    <dialog id="item-dialog" class="item-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-shell">
+        <div class="dialog-header">
+          <div><p class="section-kicker">ITEM DETAILS</p><h2 id="dialog-title"></h2><div id="dialog-meta" class="dialog-meta"></div></div>
+          <button id="dialog-close" class="dialog-close" type="button" aria-label="Close item details">×</button>
+        </div>
+        <div id="dialog-description" class="dialog-description"></div>
+      </div>
+    </dialog>
   </body>
 </html>
