@@ -14,6 +14,11 @@ const sourceSearch = document.querySelector("#source-search");
 const sourceList = document.querySelector("#source-list");
 const sourceNoResults = document.querySelector("#source-no-results");
 const clearSources = document.querySelector("#clear-sources");
+const rarityToggle = document.querySelector("#rarity-toggle");
+const rarityLabel = document.querySelector("#rarity-toggle-label");
+const rarityPanel = document.querySelector("#rarity-options");
+const rarityList = document.querySelector("#rarity-list");
+const clearRarities = document.querySelector("#clear-rarities");
 const editionOptions = [...document.querySelectorAll(".edition-option")];
 const itemDialog = document.querySelector("#item-dialog");
 const dialogTitle = document.querySelector("#dialog-title");
@@ -22,16 +27,36 @@ const dialogDescription = document.querySelector("#dialog-description");
 const dialogClose = document.querySelector("#dialog-close");
 let items = [];
 const selectedSources = new Set();
-let selectedEdition = "2014";
-let editionSelected = false;
+const selectedRarities = new Set();
+const isPf2e = window.location.pathname.endsWith("/pf2e.html");
+let selectedEdition = isPf2e ? "" : "2014";
+let editionSelected = isPf2e;
 
 const icons = ["✳", "◇", "⌘", "✦", "◈", "✺"];
 const rarityClass = (rarity = "common") => rarity.toLowerCase().replace(/[^a-z]/g, "");
-const getItemKind = (item) => item.wondrous ? "Wondrous item" : item.weapon ? `${item.weaponCategory === "simple" ? "Simple" : item.weaponCategory === "martial" ? "Martial" : "Weapon"} weapon` : item.ac != null ? "Armor" : item.type && !/^[A-Z]+(?:\|[A-Z0-9]+)?$/.test(item.type) ? item.type : "Equipment";
+const getItemKind = (item) => isPf2e ? (item.category || item.type || "Item") : item.wondrous ? "Wondrous item" : item.weapon ? `${item.weaponCategory === "simple" ? "Simple" : item.weaponCategory === "martial" ? "Martial" : "Weapon"} weapon` : item.ac != null ? "Armor" : item.type && !/^[A-Z]+(?:\|[A-Z0-9]+)?$/.test(item.type) ? item.type : "Equipment";
+const rarityOptions = isPf2e
+  ? ["Common", "Uncommon", "Rare", "Unique"]
+  : ["Common", "Uncommon", "Rare", "Very Rare", "Legendary", "Artifact", "Unspecified", "Other"];
+const getItemRarity = (item) => {
+  if (isPf2e) {
+    const rarity = item.traits?.map((trait) => String(trait).toLowerCase()).find((trait) => ["common", "uncommon", "rare", "unique"].includes(trait));
+    return rarity ? rarity[0].toUpperCase() + rarity.slice(1) : "Common";
+  }
+  const rarity = String(item.rarity ?? "").trim().toLowerCase();
+  if (["common", "uncommon", "rare", "very rare", "legendary", "artifact"].includes(rarity)) {
+    return rarity.replace(/\b\w/g, (letter) => letter.toUpperCase());
+  }
+  if (!rarity || rarity === "none") return "Unspecified";
+  return "Other";
+};
 
 function render() {
-  const canBrowse = shouldShowItems(searchInput.value, selectedSources, editionSelected);
-  const visibleItems = canBrowse ? filterItems(items, searchInput.value, selectedSources, selectedEdition) : [];
+  const canBrowse = shouldShowItems(searchInput.value, selectedSources, editionSelected) || selectedRarities.size > 0;
+  const matchingItems = canBrowse ? filterItems(items, normalizeSearchQuery(searchInput.value), selectedSources, selectedEdition) : [];
+  const visibleItems = selectedRarities.size
+    ? matchingItems.filter((item) => selectedRarities.has(getItemRarity(item)))
+    : matchingItems;
   resultCount.textContent = visibleItems.length.toLocaleString();
   caption.textContent = canBrowse ? "FILTERED ITEMS" : "ADD A FILTER TO BEGIN";
   grid.replaceChildren(...visibleItems.map((item, index) => {
@@ -46,8 +71,9 @@ function render() {
     icon.className = "item-icon";
     icon.textContent = icons[index % icons.length];
     const rarity = document.createElement("span");
-    rarity.className = `rarity ${rarityClass(item.rarity === "none" ? "common" : item.rarity)}`;
-    rarity.textContent = item.rarity && item.rarity !== "none" ? item.rarity : getItemKind(item);
+    const rarityLabel = getItemRarity(item);
+    rarity.className = `rarity ${rarityClass(rarityLabel)}`;
+    rarity.textContent = rarityLabel;
     top.append(icon, rarity);
     const title = document.createElement("h3");
     title.textContent = item.name || "Unnamed item";
@@ -70,6 +96,7 @@ function render() {
     ? "Try another name or a shorter search."
     : "Select a source or enter at least 3 characters to browse items.";
   updateSourceOptions();
+  updateRarityOptions();
 }
 
 function appendInlineText(parent, value) {
@@ -118,7 +145,10 @@ function appendEntry(parent, entry) {
       table.append(head);
     }
     const body = document.createElement("tbody");
-    for (const values of entry.rows ?? []) {
+    const flattenRows = (rows) => rows.flatMap((row) => Array.isArray(row)
+      ? [row]
+      : row?.type === "multiRow" && Array.isArray(row.rows) ? flattenRows(row.rows) : []);
+    for (const values of flattenRows(entry.rows ?? [])) {
       const row = document.createElement("tr");
       for (const value of values) {
         const cell = document.createElement("td");
@@ -170,7 +200,7 @@ function appendEntry(parent, entry) {
 function openItem(item) {
   dialogTitle.textContent = item.name || "Unnamed item";
   dialogMeta.replaceChildren();
-  for (const value of [item.rarity && item.rarity !== "none" ? item.rarity : null, item.source ? getSourceLabel(item.source) : null, getItemKind(item), item.weight ? `${item.weight} lb.` : null, item.reqAttune ? `Attunement: ${item.reqAttune === true ? "required" : item.reqAttune}` : null].filter(Boolean)) {
+  for (const value of [getItemRarity(item), item.source ? getSourceLabel(item.source) : null, getItemKind(item), isPf2e && item.level != null ? `Level ${item.level}` : null, isPf2e && item.bulk ? `Bulk ${item.bulk}` : null, item.weight ? `${item.weight} lb.` : null, item.reqAttune ? `Attunement: ${item.reqAttune === true ? "required" : item.reqAttune}` : null].filter(Boolean)) {
     const chip = document.createElement("span");
     chip.className = "detail-chip";
     chip.textContent = String(value).toUpperCase();
@@ -240,9 +270,30 @@ sourceToggle.addEventListener("click", () => {
   const opening = sourcePanel.hidden;
   sourcePanel.hidden = !opening;
   sourceToggle.setAttribute("aria-expanded", String(opening));
+  if (opening) { rarityPanel.hidden = true; rarityToggle.setAttribute("aria-expanded", "false"); }
   if (opening) sourceSearch.focus();
 });
 sourceSearch.addEventListener("input", updateSourceOptions);
+rarityToggle.addEventListener("click", () => {
+  const opening = rarityPanel.hidden;
+  rarityPanel.hidden = !opening;
+  rarityToggle.setAttribute("aria-expanded", String(opening));
+  if (opening) { sourcePanel.hidden = true; sourceToggle.setAttribute("aria-expanded", "false"); }
+});
+rarityPanel.addEventListener("change", (event) => {
+  const checkbox = event.target.closest("input[type='checkbox']");
+  if (!checkbox) return;
+  if (checkbox.checked) selectedRarities.add(checkbox.value);
+  else selectedRarities.delete(checkbox.value);
+  updateRarityLabel();
+  render();
+});
+clearRarities.addEventListener("click", () => {
+  selectedRarities.clear();
+  rarityPanel.querySelectorAll("input[type='checkbox']").forEach((checkbox) => { checkbox.checked = false; });
+  updateRarityLabel();
+  render();
+});
 sourcePanel.addEventListener("change", (event) => {
   const checkbox = event.target.closest("input[type='checkbox']");
   if (!checkbox) return;
@@ -269,12 +320,42 @@ document.addEventListener("click", (event) => {
   if (!event.target.closest(".source-picker")) {
     sourcePanel.hidden = true;
     sourceToggle.setAttribute("aria-expanded", "false");
+    rarityPanel.hidden = true;
+    rarityToggle.setAttribute("aria-expanded", "false");
   }
 });
 
 function updateSourceLabel() {
   const count = selectedSources.size;
   sourceLabel.textContent = count ? `${count} source${count === 1 ? "" : "s"} selected` : "All sources";
+}
+
+function updateRarityLabel() {
+  const count = selectedRarities.size;
+  rarityLabel.textContent = count ? `${count} rarit${count === 1 ? "y" : "ies"} selected` : "All rarities";
+}
+
+function updateRarityOptions() {
+  const query = normalizeSearchQuery(searchInput.value);
+  const relevantItems = filterItems(items, query, selectedSources, selectedEdition);
+  const counts = new Map(rarityOptions.map((rarity) => [rarity, 0]));
+  for (const item of relevantItems) counts.set(getItemRarity(item), (counts.get(getItemRarity(item)) ?? 0) + 1);
+  const existing = new Map([...rarityList.querySelectorAll(".rarity-option")].map((label) => [label.dataset.rarity, label]));
+  rarityList.replaceChildren(...rarityOptions.map((rarity) => {
+    const label = existing.get(rarity) ?? document.createElement("label");
+    label.className = "source-option rarity-option";
+    label.dataset.rarity = rarity;
+    let checkbox = label.querySelector("input");
+    let name = label.querySelector(".source-name");
+    let count = label.querySelector(".source-count");
+    if (!checkbox) { checkbox = document.createElement("input"); checkbox.type = "checkbox"; checkbox.value = rarity; checkbox.checked = selectedRarities.has(rarity); }
+    if (!name) { name = document.createElement("span"); name.className = "source-name"; name.textContent = rarity; }
+    if (!count) { count = document.createElement("small"); count.className = "source-count"; }
+    count.textContent = (counts.get(rarity) ?? 0).toLocaleString();
+    label.replaceChildren(checkbox, name, count);
+    return label;
+  }));
+  updateRarityLabel();
 }
 
 function updateSourceOptions() {
@@ -309,6 +390,39 @@ document.addEventListener("keydown", (event) => {
 });
 
 try {
+  if (isPf2e) {
+    loadingState.textContent = "Opening the Pathfinder archive…";
+    const indexResponse = await fetch("https://raw.githubusercontent.com/Pf2eToolsOrg/Pf2eTools/dev/data/items/index.json");
+    if (!indexResponse.ok) throw new Error("Could not load the PF2E source index.");
+    const sourceIndex = await indexResponse.json();
+    const excludedSources = new Set(["SF0", "SF1", "SF2", "SF3"]);
+    const sources = Object.entries(sourceIndex).filter(([code]) => !excludedSources.has(code));
+    const groups = await Promise.all(sources.map(async ([code, file]) => {
+      const response = await fetch(`https://raw.githubusercontent.com/Pf2eToolsOrg/Pf2eTools/dev/data/items/${encodeURIComponent(file)}`);
+      if (!response.ok) throw new Error(`Could not load the ${code} PF2E item dataset.`);
+      const data = await response.json();
+      return (data.item ?? []).flatMap((item) => {
+        if (!item.variants?.length) return [item];
+        return item.variants.map((variant) => ({
+          ...item,
+          ...variant,
+          name: variant.name || `${item.name} (${variant.variantType})`,
+          entries: variant.entries ?? item.entries,
+          source: item.source || code,
+          _baseName: item.name,
+        }));
+      });
+    }));
+    items = groups.flat();
+    sourceList.replaceChildren(...sources.sort(([a], [b]) => a.localeCompare(b)).map(([code]) => {
+      const label = document.createElement("label"); label.className = "source-option"; label.dataset.code = code;
+      const checkbox = document.createElement("input"); checkbox.type = "checkbox"; checkbox.value = code;
+      const name = document.createElement("span"); name.className = "source-name"; name.textContent = code;
+      const abbreviation = document.createElement("small"); abbreviation.className = "source-abbreviation"; abbreviation.textContent = code;
+      const itemCount = document.createElement("small"); itemCount.className = "source-count";
+      label.append(checkbox, name, abbreviation, itemCount); return label;
+    }));
+  } else {
   const manifestResponse = await fetch("/data/manifest.json");
   if (!manifestResponse.ok) throw new Error("Could not load the item archive manifest.");
   const manifest = await manifestResponse.json();
@@ -338,7 +452,9 @@ try {
     label.append(checkbox, name, abbreviation, itemCount);
     return label;
   }));
+  }
   updateSourceOptions();
+  updateRarityOptions();
   loadingState.remove();
   render();
   const linkedItem = resolveItemLink(items, window.location.href);

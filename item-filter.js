@@ -120,6 +120,12 @@ function formatPrice(value) {
 
 export function getItemStats(item) {
   const stats = [];
+  if (item.level != null) stats.push({ label: "Level", value: String(item.level) });
+  if (item.category) stats.push({ label: "Category", value: String(item.category) });
+  if (item.bulk) stats.push({ label: "Bulk", value: String(item.bulk) });
+  if (item.price?.amount != null) stats.push({ label: "Price", value: `${item.price.amount} ${item.price.coin ?? ""}${item.price.note ? ` ${item.price.note}` : ""}`.trim() });
+  if (item.usage) stats.push({ label: "Usage", value: String(item.usage) });
+  if (item.traits?.length) stats.push({ label: "Traits", value: item.traits.join(", ") });
   if (item.weaponCategory) stats.push({ label: "Weapon", value: `${item.weaponCategory === "simple" ? "Simple" : "Martial"} weapon` });
   if (item.ac != null) stats.push({ label: "Armor Class", value: String(item.ac) });
   if (item.dmg1) {

@@ -4,75 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#101714" />
-    <title>Relic — Item compendium</title>
+    <title>Relic — Choose a compendium</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="app.js"></script>
   </head>
-  <body>
+  <body class="home-page">
     <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
     <header class="topbar">
-      <a class="brand" href="#" aria-label="Relic home"><span class="brand-mark">✳</span><span>relic<span class="brand-period">.</span></span></a>
-      <div class="topbar-note"><span class="status-dot"></span> THE FIELD GUIDE <span class="note-divider">/</span> 5E ITEMS</div>
-      <div class="edition">A COMPENDIUM <span>✦</span></div>
+      <a class="brand" href="index.html" aria-label="Relic home"><span class="brand-mark">✳</span><span>relic<span class="brand-period">.</span></span></a>
+      <div class="edition">CHOOSE A COMPENDIUM <span>✦</span></div>
     </header>
-
-    <main>
-      <section class="intro">
-        <p class="eyebrow"><span></span> YOUR NEXT GREAT FIND</p>
-        <h1>Every legend<br />starts with <em>an item.</em></h1>
-        <p class="intro-copy">A field guide to the curious, the powerful, and the<br class="desktop-break" /> almost certainly cursed.</p>
-      </section>
-
-      <section class="browser" aria-label="Item browser">
-        <div class="browser-heading">
-          <div><p class="section-kicker">THE COLLECTION</p><h2>Find your artifact</h2></div>
-          <div class="result-count" aria-live="polite"><strong id="result-count">—</strong><span> items</span></div>
-        </div>
-        <label class="search-box" for="search-input">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
-          <input id="search-input" type="search" placeholder="Search by item name…" autocomplete="off" />
-          <kbd>/</kbd>
-        </label>
-        <div class="edition-filter" role="group" aria-label="Filter items by ruleset">
-          <span class="filter-label">RULESET</span>
-          <div class="edition-toggle">
-            <button class="edition-option" type="button" data-edition="2014" aria-pressed="true">2014</button>
-            <button class="edition-option" type="button" data-edition="2024" aria-pressed="false">2024</button>
-          </div>
-        </div>
-        <div class="filter-row">
-          <span class="filter-label">SOURCE</span>
-          <div class="source-picker">
-            <button id="source-toggle" class="source-toggle" type="button" aria-expanded="false" aria-controls="source-options">
-              <span id="source-toggle-label">All sources</span><span class="source-chevron" aria-hidden="true"></span>
-            </button>
-            <div id="source-options" class="source-options" role="group" aria-label="Filter items by source" hidden>
-              <input id="source-search" class="source-search" type="search" placeholder="Search sources…" aria-label="Search sources by name or abbreviation" autocomplete="off" />
-              <div id="source-list" class="source-list"></div>
-              <p id="source-no-results" class="source-no-results" hidden>No sources match that search.</p>
-            </div>
-            <button id="clear-sources" class="clear-sources" type="button">Clear</button>
-          </div>
-          <span class="filter-hint">Select one or more source codes</span>
-        </div>
-        <div class="list-toolbar"><span id="list-caption">ALL ITEMS</span><span>NAME <span class="sort-arrow" aria-label="ascending">↑</span></span></div>
-        <div id="items-grid" class="items-grid" aria-live="polite"></div>
-        <div id="empty-state" class="empty-state" hidden><span>⌕</span><h3>No artifacts found</h3><p>Try another name or a shorter search.</p></div>
-        <div id="loading-state" class="loading-state">Opening the archive…</div>
-      </section>
+    <main class="home-main">
+      <p class="eyebrow"><span></span> THE FIELD GUIDE</p>
+      <h1>Choose your<br /><em>compendium.</em></h1>
+      <nav class="compendium-menu" aria-label="Choose a game system">
+        <a href="dnd.html"><span>D&D 5e</span><span aria-hidden="true">↗</span></a>
+        <a href="pf2e.html"><span>Pathfinder 2e</span><span aria-hidden="true">↗</span></a>
+      </nav>
     </main>
     <footer><span>RELIC FIELD GUIDE</span><span>THE ARCHIVE IS ALWAYS GROWING <b>✦</b></span></footer>
-    <dialog id="item-dialog" class="item-dialog" aria-labelledby="dialog-title">
-      <div class="dialog-shell">
-        <div class="dialog-header">
-          <div><p class="section-kicker">ITEM DETAILS</p><h2 id="dialog-title"></h2><div id="dialog-meta" class="dialog-meta"></div></div>
-          <button id="dialog-close" class="dialog-close" type="button" aria-label="Close item details">×</button>
-        </div>
-        <div id="dialog-description" class="dialog-description"></div>
-      </div>
-    </dialog>
   </body>
 </html>

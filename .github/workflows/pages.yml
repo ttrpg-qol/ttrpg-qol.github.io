@@ -24,7 +24,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir _site
-          cp index.html app.js item-filter.js item-editions.js source-names.js styles.css _site/
+          cp index.html dnd.html pf2e.html app.js item-filter.js item-editions.js source-names.js styles.css _site/
           cp -R data _site/data
 
       - name: Configure GitHub Pages
